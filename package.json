@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "http-server -p 8000 -o",
+    "preview": "open https://gapolli.github.io"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

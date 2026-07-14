@@ -1,0 +1,47 @@
+name: Sincronizar Dados do Portfólio
+
+on:
+  schedule:
+    # Executa automaticamente todos os dias à meia-noite (UTC)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Permite que você execute manualmente pelo painel do GitHub
+  push:
+    branches:
+      - main # Ou 'master', ajuste conforme a sua branch padrão
+
+permissions:
+  contents: write # Permite que a Action salve o JSON de volta no seu repositório
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v4
+
+    - name: Buscar dados do GitHub API e gerar arquivo unificado
+      run: |
+        echo "Buscando dados do perfil..."
+        PROFILE_JSON=$(curl -s https://github.com)
+        
+        echo "Buscando repositórios..."
+        REPOS_JSON=$(curl -s "https://github.com/repos?sort=updated&per_page=100")
+        
+        # Estrutura um único arquivo combinando perfil e repositórios usando o utilitário jq (nativo no runner)
+        jq -n --argjson prof "$PROFILE_JSON" --argjson repos "$REPOS_JSON" \
+          '{profile: $prof, repositories: $repos}' > repos.json
+
+    - name: Commitar e dar Push das alterações
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@://github.com"
+        
+        # Verifica se houve mudanças reais nos dados para evitar commits vazios
+        if [ -n "$(git status --porcelain repos.json)" ]; then
+          git add repos.json
+          git commit -m "chore: auto-update portfolio cache data [skip ci]"
+          git push
+        else
+          echo "Nenhuma alteração detectada nos repositórios."
+        fi

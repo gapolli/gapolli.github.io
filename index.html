@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Adrien Polli | Portfólio de Engenharia</title>
+    <!-- Tailwind CSS para Estilização Moderna -->
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@4.3.2/dist/lib.min.js"></script>
+    <style>
+        .repo-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-950 text-gray-100 min-h-screen font-sans">
+
+    <!-- Header / Perfil -->
+    <header
+        class="max-w-6xl mx-auto px-6 py-12 border-b border-gray-800 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+            <h1
+                class="text-3xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+                Gustavo Adrien Polli
+            </h1>
+            <p class="text-gray-400 mt-2 max-w-xl">
+                Systems Analyst & Software Engineer. Especializado em arquitetura de baixo nível, motores de alta
+                performance (Rust/C++) e ecossistemas mobile focados em dados.
+            </p>
+        </div>
+        <div id="profile-stats" class="text-sm text-gray-400 bg-gray-900 p-4 rounded-xl border border-gray-800">
+            <!-- Preenchido via API -->
+            Carregando dados do perfil...
+        </div>
+    </header>
+
+    <!-- Grid de Repositórios -->
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <h2 class="text-xl font-semibold mb-8 flex items-center gap-2">
+            <span class="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></span>
+            Projetos Ativos & Repositórios Públicos
+        </h2>
+
+        <!-- Estado de Carregamento -->
+        <div id="loading" class="text-center py-12 text-gray-500">
+            Buscando dados em tempo real no ecossistema do GitHub...
+        </div>
+
+        <!-- Container dos Cards -->
+        <div id="repos-container" class="grid grid-cols-1 md:grid-cols-2 gap-6 hidden">
+            <!-- Injetado dinamicamente via JS -->
+        </div>
+    </main>
+
+    <script>
+        // Agora o consumo é local, instantâneo e sem risco de rate-limit
+        async function fetchGitHubPortfolio() {
+            const reposContainer = document.getElementById('repos-container');
+            const loadingElement = document.getElementById('loading');
+            const statsContainer = document.getElementById('profile-stats');
+
+            try {
+                // Faz o fetch do arquivo gerado pela nossa GitHub Action
+                const response = await fetch('./repos.json');
+                if (!response.ok) throw new Error('Arquivo de cache não encontrado');
+
+                const data = await response.json();
+                const profile = data.profile;
+                const repos = data.repositories;
+
+                // Renderiza Stats
+                statsContainer.innerHTML = `
+                📌 <strong>${profile.public_repos}</strong> Repos públicos | 
+                👥 <strong>${profile.followers}</strong> Seguidores <br>
+                📍 Limeira, SP, Brasil
+            `;
+
+                // Filtra forks e repositórios arquivados (garantia extra)
+                const originalRepos = repos.filter(repo => !repo.fork && !repo.archived);
+
+                loadingElement.classList.add('hidden');
+                reposContainer.classList.remove('hidden');
+                reposContainer.innerHTML = '';
+
+                // Monta os cards
+                originalRepos.forEach(repo => {
+                    const card = document.createElement('div');
+                    card.className = "repo-card bg-gray-900 border border-gray-800 p-6 rounded-xl transition-all duration-300 flex flex-col justify-between";
+
+                    const tagsHTML = repo.topics && repo.topics.length > 0
+                        ? repo.topics.map(t => `<span class="bg-gray-800 text-gray-400 text-xs px-2.5 py-1 rounded-md border border-gray-700">${t}</span>`).join('')
+                        : `<span class="bg-gray-800 text-gray-500 text-xs px-2.5 py-1 rounded-md">${repo.language || 'Geral'}</span>`;
+
+                    card.innerHTML = `
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <h3 class="text-lg font-bold text-blue-400 hover:underline">
+                                <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                            </h3>
+                            <span class="text-xs text-gray-500">⭐ ${repo.stargazers_count}</span>
+                        </div>
+                        <p class="text-gray-400 text-sm line-clamp-3 mb-4">
+                            ${repo.description || 'Sem descrição fornecida ainda.'}
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex flex-wrap gap-1.5 mb-3">${tagsHTML}</div>
+                        <div class="text-xs text-gray-500 flex justify-between items-center pt-2 border-t border-gray-800/50">
+                            <span>Principal: <strong>${repo.language || 'N/A'}</strong></span>
+                            <span>Atualizado em: ${new Date(repo.updated_at).toLocaleDateString('pt-BR')}</span>
+                        </div>
+                    </div>
+                `;
+                    reposContainer.appendChild(card);
+                });
+
+            } catch (error) {
+                console.error(error);
+                loadingElement.innerHTML = `<span class="text-red-400">Erro ao carregar os dados locais do portfólio.</span>`;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchGitHubPortfolio);
+    </script>
+
+</body>
+
+</html>

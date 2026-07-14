@@ -5,68 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo Adrien Polli | Portfólio de Engenharia</title>
-    <!-- Tailwind CSS para Estilização Moderna -->
-    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@4.3.2/dist/lib.min.js"></script>
+    <!-- Tailwind CSS Play CDN — versão 3.4.17 (estável) -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <style>
         body {
-            background-color: #0b0f19;
-            background-image: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.2) 0%, transparent 60%);
+            background-color: #0b1329;
+            background-image: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.25) 0%, transparent 60%);
         }
+
         .custom-card {
-            background-color: #111827;
-            border: 1px solid #1f2937;
+            background-color: #1c2541;
+            border: 1px solid #3a506b;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         .custom-card:hover {
             transform: translateY(-4px);
-            border-color: #3b82f6;
-            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.3);
+            border-color: #60a5fa;
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.4);
+        }
+
+        /* line-clamp-4: nativo no Tailwind 3.3+, mas garantimos o fallback */
+        .line-clamp-4 {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
     </style>
 </head>
-<body class="text-slate-100 min-h-screen font-sans antialiased">
+
+<body class="text-gray-100 min-h-screen font-sans antialiased">
 
     <div class="max-w-5xl mx-auto px-6 py-16">
-        
+
         <!-- SEÇÃO ESTÁTICA: SOBRE MIM -->
-        <section class="mb-16 border-b border-slate-800 pb-12">
+        <section class="mb-16 border-b border-gray-700 pb-12">
             <div class="flex flex-col md:flex-row items-start justify-between gap-8">
                 <div class="flex-1">
-                    <span class="text-xs font-bold tracking-widest text-blue-400 uppercase">Software Engineer & Systems Analyst</span>
-                    <h1 class="text-4xl font-extrabold tracking-tight mt-1 mb-6 bg-gradient-to-r from-blue-400 via-indigo-400 to-emerald-400 bg-clip-text text-transparent">
+                    <span class="text-xs font-bold tracking-widest text-blue-400 uppercase">Software Engineer & Systems
+                        Analyst</span>
+                    <h1
+                        class="text-4xl font-extrabold tracking-tight mt-1 mb-6 bg-gradient-to-r from-blue-400 via-indigo-400 to-emerald-400 bg-clip-text text-transparent">
                         Gustavo Adrien Polli
                     </h1>
-                    <p class="text-slate-300 leading-relaxed mb-4 text-base">
-                        Especialista em arquitetura de sistemas, engenharia de software e processamento de dados de alta performance. Desenvolvo desde motores gráficos retro e emuladores em <span class="text-amber-400 font-semibold">Rust/C++</span> até ecossistemas móveis completos voltados a analytics.
+                    <p class="text-gray-300 leading-relaxed mb-4 text-base">
+                        Especialista em arquitetura de sistemas, engenharia de software e processamento de dados de alta
+                        performance. Desenvolvo desde motores gráficos retro e emuladores em <span
+                            class="text-amber-400 font-semibold">Rust/C++</span> até ecossistemas móveis completos
+                        voltados a analytics.
                     </p>
-                    <p class="text-slate-300 leading-relaxed text-base">
-                        Com base acadêmica sólida e pós-graduação em Gestão de TI, busco resolver problemas complexos na intersecção entre o hardware e o software de alto nível.
+                    <p class="text-gray-300 leading-relaxed text-base">
+                        Com base acadêmica sólida e pós-graduação em Gestão de TI, busco resolver problemas complexos na
+                        intersecção entre o hardware e o software de alto nível.
                     </p>
                 </div>
-                
-                <div id="profile-stats" class="w-full md:w-auto text-sm bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-xl">
-                    <span class="text-slate-400 font-mono text-xs">Carregando métricas...</span>
+
+                <div id="profile-stats"
+                    class="w-full md:w-auto text-sm bg-gray-900/80 border border-gray-700 p-6 rounded-2xl shadow-xl min-w-[200px]">
+                    <span class="text-gray-400 font-mono text-xs">Carregando métricas...</span>
                 </div>
             </div>
 
-            <!-- Badges de Competências (Corrigidas para Alto Contraste) -->
+            <!-- Badges de Competências -->
             <div class="flex flex-wrap gap-2 mt-8">
-                <span class="bg-slate-800 text-slate-200 border border-slate-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">Rust</span>
-                <span class="bg-slate-800 text-slate-200 border border-slate-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">C++ / DSP</span>
-                <span class="bg-slate-800 text-slate-200 border border-slate-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">TypeScript</span>
-                <span class="bg-slate-800 text-slate-200 border border-slate-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">React Native & Expo</span>
-                <span class="bg-slate-800 text-slate-200 border border-slate-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">SQLite & Core Data</span>
+                <span
+                    class="bg-gray-800 text-gray-200 border border-gray-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">Rust</span>
+                <span
+                    class="bg-gray-800 text-gray-200 border border-gray-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">C++
+                    / DSP</span>
+                <span
+                    class="bg-gray-800 text-gray-200 border border-gray-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">TypeScript</span>
+                <span
+                    class="bg-gray-800 text-gray-200 border border-gray-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">React
+                    Native & Expo</span>
+                <span
+                    class="bg-gray-800 text-gray-200 border border-gray-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">SQLite
+                    & Core Data</span>
             </div>
         </section>
 
-        <!-- SEÇÃO DINÂMICA -->
+        <!-- SEÇÃO DINÂMICA: PROJETOS -->
         <section>
             <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
                 <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
                 Projetos em Destaque
             </h2>
 
-            <div id="loading" class="text-center py-12 text-slate-400 font-mono text-sm">
+            <div id="loading" class="text-center py-12 text-gray-400 font-mono text-sm">
                 Injetando dados do arquivo de cache local...
             </div>
 
@@ -84,19 +110,22 @@
             const statsContainer = document.getElementById('profile-stats');
 
             try {
+                // Como a Action já passou, o fetch local funcionará de primeira
                 const response = await fetch('./repos.json');
-                if (!response.ok) throw new Error('Cache inexistente');
-                
+                if (!response.ok) throw new Error('Cache não encontrado');
+
                 const data = await response.json();
-                const profile = data.profile;
-                const repos = data.repositories;
+
+                // O operador slurpfile do jq coloca os objetos dentro de arrays, tratamos aqui:
+                const profile = Array.isArray(data.profile) ? data.profile[0] : data.profile;
+                const repos = Array.isArray(data.repositories) ? data.repositories[0] : data.repositories;
 
                 statsContainer.innerHTML = `
-                    <h4 class="font-bold text-slate-200 mb-3 border-b border-slate-800 pb-1 flex items-center gap-2">📊 Atividade GitHub</h4>
-                    <div class="space-y-1.5 text-slate-300 font-mono text-xs">
-                        <div>• Repositórios: <span class="text-blue-400 font-bold">${profile.public_repos}</span></div>
+                    <h4 class="font-bold text-blue-400 mb-3 border-b border-gray-700 pb-1 flex items-center gap-2">📊 Atividade GitHub</h4>
+                    <div class="space-y-1.5 text-gray-300 font-mono text-xs">
+                        <div>• Repos públicos: <span class="text-white font-bold">${profile.public_repos}</span></div>
                         <div>• Seguidores: <span class="text-emerald-400 font-bold">${profile.followers}</span></div>
-                        <div>• Localização: <span class="text-slate-400">Limeira, SP</span></div>
+                        <div>• Localização: <span class="text-gray-300">Limeira, SP</span></div>
                     </div>
                 `;
 
@@ -110,9 +139,9 @@
                     const card = document.createElement('div');
                     card.className = "custom-card p-6 rounded-2xl flex flex-col justify-between shadow-lg";
 
-                    const tagsHTML = repo.topics && repo.topics.length > 0 
+                    const tagsHTML = repo.topics && repo.topics.length > 0
                         ? repo.topics.slice(0, 4).map(t => `<span class="bg-blue-950 text-blue-300 text-[10px] font-mono px-2 py-0.5 rounded border border-blue-800">${t}</span>`).join('')
-                        : `<span class="bg-slate-800 text-slate-400 text-[10px] font-mono px-2 py-0.5 rounded">${repo.language || 'Code'}</span>`;
+                        : `<span class="bg-gray-800 text-gray-400 text-[10px] font-mono px-2 py-0.5 rounded">${repo.language || 'Code'}</span>`;
 
                     card.innerHTML = `
                         <div>
@@ -120,9 +149,9 @@
                                 <h3 class="text-base font-bold text-blue-400 hover:text-blue-300 transition-colors">
                                     <a href="${repo.html_url}" target="_blank">${repo.name}</a>
                                 </h3>
-                                <span class="text-xs text-slate-400 font-mono">⭐ ${repo.stargazers_count}</span>
+                                <span class="text-xs text-gray-400 font-mono">⭐ ${repo.stargazers_count}</span>
                             </div>
-                            <p class="text-slate-300 text-xs leading-relaxed line-clamp-3 mb-4">
+                            <p class="text-gray-300 text-xs leading-relaxed line-clamp-4 mb-4">
                                 ${repo.description || 'Nenhuma descrição técnica adicionada ao repositório ainda.'}
                             </p>
                         </div>
@@ -130,9 +159,9 @@
                             <div class="flex flex-wrap gap-1.5 mb-4">
                                 ${tagsHTML}
                             </div>
-                            <div class="text-[10px] text-slate-400 font-mono flex justify-between items-center pt-2 border-t border-slate-800">
-                                <span>Linguagem: <strong class="text-slate-200">${repo.language || 'Vários'}</strong></span>
-                                <span>Atualizado em: ${new Date(repo.updated_at).toLocaleDateString('pt-BR')}</span>
+                            <div class="text-[10px] text-gray-400 font-mono flex justify-between items-center pt-2 border-t border-gray-700">
+                                <span>Linguagem: <strong class="text-white">${repo.language || 'Vários'}</strong></span>
+                                <span>Atualizado: ${new Date(repo.updated_at).toLocaleDateString('pt-BR')}</span>
                             </div>
                         </div>
                     `;
@@ -141,11 +170,12 @@
 
             } catch (error) {
                 console.error(error);
-                loadingElement.innerHTML = `<span class="text-red-400 font-mono text-xs">Aguardando a execução bem-sucedida do GitHub Actions para criar o arquivo de dados.</span>`;
+                loadingElement.innerHTML = `<span class="text-red-400 font-mono text-xs">Erro ao interpretar o cache do portfólio. Certifique-se de que a Action gerou os dados corretamente.</span>`;
             }
         }
 
         document.addEventListener('DOMContentLoaded', fetchGitHubPortfolio);
     </script>
 </body>
+
 </html>

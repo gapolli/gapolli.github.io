@@ -8,80 +8,68 @@
     <!-- Tailwind CSS para Estilização Moderna -->
     <script src="https://cdn.jsdelivr.net/npm/tailwindcss@4.3.2/dist/lib.min.js"></script>
     <style>
-        :root {
-            --brand-glow: rgba(59, 130, 246, 0.15);
-        }
         body {
-            background-color: #030712;
-            background-image: radial-gradient(circle at 50% 0%, var(--brand-glow) 0%, transparent 50%);
+            background-color: #0b0f19;
+            background-image: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.2) 0%, transparent 60%);
         }
         .custom-card {
-            background: linear-gradient(135deg, rgba(17, 24, 39, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(31, 41, 55, 0.7);
+            background-color: #111827;
+            border: 1px solid #1f2937;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .custom-card:hover {
             transform: translateY(-4px);
-            border-color: rgba(59, 130, 246, 0.5);
-            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
-        }
-        .tech-badge {
-            background: rgba(31, 41, 55, 0.5);
-            border: 1px solid rgba(75, 85, 99, 0.4);
-            color: #d1d5db;
+            border-color: #3b82f6;
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.3);
         }
     </style>
 </head>
-<body class="text-gray-100 min-h-screen font-sans antialiased">
+<body class="text-slate-100 min-h-screen font-sans antialiased">
 
-    <!-- Container Central -->
     <div class="max-w-5xl mx-auto px-6 py-16">
         
         <!-- SEÇÃO ESTÁTICA: SOBRE MIM -->
-        <section class="mb-16 border-b border-gray-800 pb-12">
+        <section class="mb-16 border-b border-slate-800 pb-12">
             <div class="flex flex-col md:flex-row items-start justify-between gap-8">
                 <div class="flex-1">
                     <span class="text-xs font-bold tracking-widest text-blue-400 uppercase">Software Engineer & Systems Analyst</span>
-                    <h1 class="text-4xl font-extrabold tracking-tight mt-1 mb-4 bg-gradient-to-r from-blue-400 via-indigo-400 to-emerald-400 bg-clip-text text-transparent">
+                    <h1 class="text-4xl font-extrabold tracking-tight mt-1 mb-6 bg-gradient-to-r from-blue-400 via-indigo-400 to-emerald-400 bg-clip-text text-transparent">
                         Gustavo Adrien Polli
                     </h1>
-                    <p class="text-gray-400 leading-relaxed mb-4">
+                    <p class="text-slate-300 leading-relaxed mb-4 text-base">
                         Especialista em arquitetura de sistemas, engenharia de software e processamento de dados de alta performance. Desenvolvo desde motores gráficos retro e emuladores em <span class="text-amber-400 font-semibold">Rust/C++</span> até ecossistemas móveis completos voltados a analytics.
                     </p>
-                    <p class="text-gray-400 leading-relaxed">
+                    <p class="text-slate-300 leading-relaxed text-base">
                         Com base acadêmica sólida e pós-graduação em Gestão de TI, busco resolver problemas complexos na intersecção entre o hardware e o software de alto nível.
                     </p>
                 </div>
-                <!-- Estatísticas Dinâmicas injetadas aqui -->
-                <div id="profile-stats" class="w-full md:w-auto text-sm bg-gray-900/60 border border-gray-800 p-6 rounded-2xl backdrop-blur">
-                    Carregando métricas...
+                
+                <div id="profile-stats" class="w-full md:w-auto text-sm bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-xl">
+                    <span class="text-slate-400 font-mono text-xs">Carregando métricas...</span>
                 </div>
             </div>
 
-            <!-- Badges de Core Competencies -->
-            <div class="flex flex-wrap gap-2 mt-6">
-                <span class="tech-badge text-xs px-3 py-1.5 rounded-full font-mono">Rust</span>
-                <span class="tech-badge text-xs px-3 py-1.5 rounded-full font-mono">C++ / DSP</span>
-                <span class="tech-badge text-xs px-3 py-1.5 rounded-full font-mono">TypeScript</span>
-                <span class="tech-badge text-xs px-3 py-1.5 rounded-full font-mono">React Native & Expo</span>
-                <span class="tech-badge text-xs px-3 py-1.5 rounded-full font-mono">SQLite & Core Data</span>
+            <!-- Badges de Competências (Corrigidas para Alto Contraste) -->
+            <div class="flex flex-wrap gap-2 mt-8">
+                <span class="bg-slate-800 text-slate-200 border border-slate-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">Rust</span>
+                <span class="bg-slate-800 text-slate-200 border border-slate-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">C++ / DSP</span>
+                <span class="bg-slate-800 text-slate-200 border border-slate-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">TypeScript</span>
+                <span class="bg-slate-800 text-slate-200 border border-slate-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">React Native & Expo</span>
+                <span class="bg-slate-800 text-slate-200 border border-slate-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">SQLite & Core Data</span>
             </div>
         </section>
 
-        <!-- SEÇÃO DINÂMICA: CATÁLOGO DE REPOSITÓRIOS -->
+        <!-- SEÇÃO DINÂMICA -->
         <section>
-            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
                 <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
                 Projetos em Destaque
             </h2>
 
-            <!-- Loader de segurança -->
-            <div id="loading" class="text-center py-12 text-gray-500 font-mono text-sm">
+            <div id="loading" class="text-center py-12 text-slate-400 font-mono text-sm">
                 Injetando dados do arquivo de cache local...
             </div>
 
-            <!-- Grid dos cards -->
             <div id="repos-container" class="grid grid-cols-1 md:grid-cols-2 gap-6 hidden">
                 <!-- Injetado dinamicamente via JS -->
             </div>
@@ -89,7 +77,6 @@
 
     </div>
 
-    <!-- Lógica de Processamento Dinâmico -->
     <script>
         async function fetchGitHubPortfolio() {
             const reposContainer = document.getElementById('repos-container');
@@ -104,17 +91,15 @@
                 const profile = data.profile;
                 const repos = data.repositories;
 
-                // Atualiza o painel de estatísticas estático
                 statsContainer.innerHTML = `
-                    <h4 class="font-bold text-gray-300 mb-2 border-b border-gray-800 pb-1 flex items-center gap-2">📊 Atividade GitHub</h4>
-                    <div class="space-y-1 text-gray-400 font-mono text-xs">
+                    <h4 class="font-bold text-slate-200 mb-3 border-b border-slate-800 pb-1 flex items-center gap-2">📊 Atividade GitHub</h4>
+                    <div class="space-y-1.5 text-slate-300 font-mono text-xs">
                         <div>• Repositórios: <span class="text-blue-400 font-bold">${profile.public_repos}</span></div>
                         <div>• Seguidores: <span class="text-emerald-400 font-bold">${profile.followers}</span></div>
-                        <div>• Localização: <span class="text-gray-300">Limeira, SP</span></div>
+                        <div>• Localização: <span class="text-slate-400">Limeira, SP</span></div>
                     </div>
                 `;
 
-                // Filtro avançado: ignora forks e oculta os que você acabou de arquivar!
                 const activeRepos = repos.filter(repo => !repo.fork && !repo.archived);
 
                 loadingElement.classList.add('hidden');
@@ -123,21 +108,21 @@
 
                 activeRepos.forEach(repo => {
                     const card = document.createElement('div');
-                    card.className = "custom-card p-6 rounded-2xl flex flex-col justify-between";
+                    card.className = "custom-card p-6 rounded-2xl flex flex-col justify-between shadow-lg";
 
                     const tagsHTML = repo.topics && repo.topics.length > 0 
-                        ? repo.topics.slice(0, 4).map(t => `<span class="bg-blue-500/10 text-blue-400 text-[10px] font-mono px-2 py-0.5 rounded border border-blue-500/20">${t}</span>`).join('')
-                        : `<span class="bg-gray-800 text-gray-500 text-[10px] font-mono px-2 py-0.5 rounded">${repo.language || 'Code'}</span>`;
+                        ? repo.topics.slice(0, 4).map(t => `<span class="bg-blue-950 text-blue-300 text-[10px] font-mono px-2 py-0.5 rounded border border-blue-800">${t}</span>`).join('')
+                        : `<span class="bg-slate-800 text-slate-400 text-[10px] font-mono px-2 py-0.5 rounded">${repo.language || 'Code'}</span>`;
 
                     card.innerHTML = `
                         <div>
                             <div class="flex items-center justify-between gap-2 mb-3">
                                 <h3 class="text-base font-bold text-blue-400 hover:text-blue-300 transition-colors">
-                                    <a href="${repo.html_url}" target="_blank" class="focus:outline-none">${repo.name}</a>
+                                    <a href="${repo.html_url}" target="_blank">${repo.name}</a>
                                 </h3>
-                                <span class="text-xs text-gray-500 font-mono">⭐ ${repo.stargazers_count}</span>
+                                <span class="text-xs text-slate-400 font-mono">⭐ ${repo.stargazers_count}</span>
                             </div>
-                            <p class="text-gray-400 text-xs leading-relaxed line-clamp-3 mb-4">
+                            <p class="text-slate-300 text-xs leading-relaxed line-clamp-3 mb-4">
                                 ${repo.description || 'Nenhuma descrição técnica adicionada ao repositório ainda.'}
                             </p>
                         </div>
@@ -145,9 +130,9 @@
                             <div class="flex flex-wrap gap-1.5 mb-4">
                                 ${tagsHTML}
                             </div>
-                            <div class="text-[10px] text-gray-500 font-mono flex justify-between items-center pt-2 border-t border-gray-800/60">
-                                <span>Engine: <strong class="text-gray-400">${repo.language || 'Vários'}</strong></span>
-                                <span>Refatorado em: ${new Date(repo.updated_at).toLocaleDateString('pt-BR')}</span>
+                            <div class="text-[10px] text-slate-400 font-mono flex justify-between items-center pt-2 border-t border-slate-800">
+                                <span>Linguagem: <strong class="text-slate-200">${repo.language || 'Vários'}</strong></span>
+                                <span>Atualizado em: ${new Date(repo.updated_at).toLocaleDateString('pt-BR')}</span>
                             </div>
                         </div>
                     `;

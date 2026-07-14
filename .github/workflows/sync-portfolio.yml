@@ -22,18 +22,23 @@ jobs:
         persist-credentials: true
 
     - name: Buscar dados do GitHub API e gerar arquivo unificado
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         echo "Buscando dados da API..."
-        # Faz o download direto para arquivos temporários usando os endpoints corretos da API
-        curl -s "https://github.com/gapolli" -o profile.json
-        curl -s "https://github.com/gapolli/repos?sort=updated&per_page=100" -o repos_raw.json
+        # Endpoints corretos da GitHub REST API (api.github.com)
+        curl -s -H "Authorization: Bearer $GH_TOKEN" \
+             -H "Accept: application/vnd.github+json" \
+             "https://api.github.com/users/gapolli" -o profile.json
+        curl -s -H "Authorization: Bearer $GH_TOKEN" \
+             -H "Accept: application/vnd.github+json" \
+             "https://api.github.com/users/gapolli/repos?sort=updated&per_page=100" -o repos_raw.json
         
         echo "Agrupando dados com jq..."
-        # O operador --argfile lê os arquivos direto do disco, evitando estouro de memória no terminal
-        jq -n --argfile prof profile.json --argfile repos repos_raw.json \
-          '{profile: $prof, repositories: $repos}' > repos.json
+        # --slurpfile envolve o conteúdo num array, por isso acessamos com [0]
+        jq -n --slurpfile prof profile.json --slurpfile repos repos_raw.json \
+          '{profile: $prof[0], repositories: $repos[0]}' > repos.json
           
-        # Limpa os arquivos temporários
         rm profile.json repos_raw.json
 
     - name: Commitar as alterações localmente

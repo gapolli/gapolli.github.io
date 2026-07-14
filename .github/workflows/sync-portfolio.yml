@@ -22,16 +22,24 @@ jobs:
         persist-credentials: true
 
     - name: Buscar dados do GitHub API e gerar arquivo unificado
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         echo "Buscando dados da API..."
-        # Baixa os conteúdos diretamente em texto estruturado nas variáveis
-        PROFILE_DATA=$(curl -s "https://api.github.com/users/gapolli")
-        REPOS_DATA=$(curl -s "https://api.github.com/users/gapolli/repos?sort=updated&per_page=100")
+        # Endpoints corretos: api.github.com + nome de usuário + auth
+        curl -s -H "Authorization: Bearer $GH_TOKEN" \
+             -H "Accept: application/vnd.github+json" \
+             "https://api.github.com/users/gapolli" -o profile.json
+        curl -s -H "Authorization: Bearer $GH_TOKEN" \
+             -H "Accept: application/vnd.github+json" \
+             "https://api.github.com/users/gapolli/repos?sort=updated&per_page=100" -o repos_raw.json
         
-        echo "Agrupando dados de forma plana com jq..."
-        # O uso de --argjson passa o objeto puro diretamente, garantindo uma estrutura perfeita e sem arrays aninhados
-        jq -n --argjson prof "$PROFILE_DATA" --argjson repos "$REPOS_DATA" \
-          '{profile: $prof, repositories: $repos}' > repos.json
+        echo "Agrupando dados com jq..."
+        # --slurpfile lê dos arquivos, evitando estouro de argumentos e problemas com escaping
+        jq -n --slurpfile prof profile.json --slurpfile repos repos_raw.json \
+          '{profile: $prof[0], repositories: $repos[0]}' > repos.json
+          
+        rm profile.json repos_raw.json
 
     - name: Commitar as alterações localmente
       run: |

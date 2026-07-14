@@ -132,7 +132,6 @@
 
     <!-- JavaScript Application Orchestration -->
     <script>
-        // EMAIL OFUSCAÇÃO — Constrói o link apenas no click, evitando scrapers
         function revealEmail(event) {
             event.preventDefault();
             const email = 'gapolli' + '@yahoo.com.br';
@@ -141,6 +140,14 @@
 
         let allRepositories = [];
         let activeFilter = 'All';
+
+        // Escape HTML to prevent DOM XSS from external API data
+        function escapeHTML(str) {
+            if (str == null) return '';
+            const div = document.createElement('div');
+            div.textContent = String(str);
+            return div.innerHTML;
+        }
 
         async function fetchGitHubPortfolio() {
             const reposContainer = document.getElementById('repos-container');
@@ -155,7 +162,7 @@
                 const profile = data.profile;
                 allRepositories = data.repositories;
 
-                // Render Profile Base Metrics
+                // Render Profile Base Metrics and inject Last.fm container placeholder
                 statsContainer.innerHTML = `
                     <div>
                         <h4 class="font-bold text-blue-400 mb-2 border-b border-gray-700 pb-1 flex items-center gap-2">📊 GitHub Metrics</h4>
@@ -166,13 +173,14 @@
                         </div>
                     </div>
                     <div id="lastfm-widget" class="pt-2 border-t border-gray-800">
-                        <span class="text-gray-500 font-mono text-[10px] animate-pulse">Checking sound waves...</span>
+                        <span class="text-gray-500 font-mono text-[10px] animate-pulse">Processing cached soundtrack...</span>
                     </div>
                 `;
 
-                // Fire async Last.fm scrobble check
-                fetchLastFMTrack();
+                // Render the Last.fm section passing the flat cached object directly
+                renderLastFMTrack(data.lastfm_track);
 
+                // Filter out forks and archived repositories
                 allRepositories = allRepositories.filter(repo => repo && !repo.fork && !repo.archived);
                 loadingElement.classList.add('hidden');
 
@@ -190,41 +198,48 @@
             }
         }
 
-        async function fetchLastFMTrack() {
+        function renderLastFMTrack(lastfmData) {
             const widget = document.getElementById('lastfm-widget');
             try {
-                // Agora lê do arquivo cacheado pelo GitHub Actions
-                const cachedData = allRepositories._metadata?.lastfm_track || data.lastfm_track;
-                const lastfmData = cachedData?.recenttracks?.track;
+                const recentTracks = lastfmData?.recenttracks?.track;
 
-                if (lastfmData) {
-                    const track = Array.isArray(lastfmData) ? lastfmData[0] : lastfmData;
-                    const isPlaying = track['@attr'] && track['@attr'].nowplaying === 'true';
-                    const trackName = track.name;
-                    const artistName = track.artist['#text'];
-
-                    widget.innerHTML = `
-                <h4 class="font-bold text-red-400 mb-2 flex items-center gap-1.5 text-xs">
-                    <span class="flex h-2 w-2 relative">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full ${isPlaying ? 'bg-red-400' : 'bg-gray-500'} opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 ${isPlaying ? 'bg-red-500' : 'bg-gray-600'}"></span>
-                    </span>
-                    ${isPlaying ? 'Now Playing' : 'Last Scrobble'} (Last.fm)
-                </h4>
-                <div class="text-gray-300 font-sans text-xs font-medium truncate max-w-[220px]" title="${trackName}">
-                    🎵 ${trackName}
-                </div>
-                <div class="text-gray-400 font-mono text-[10px] truncate max-w-[220px]">
-                    by ${artistName}
-                </div>
-            `;
-                } else {
+                if (!recentTracks || (Array.isArray(recentTracks) && recentTracks.length === 0)) {
                     widget.innerHTML = `<span class="text-gray-600 font-mono text-[10px]">No tracks found for user 'gapolli'</span>`;
+                    return;
                 }
+
+                const track = Array.isArray(recentTracks) ? recentTracks[0] : recentTracks;
+
+                if (!track || !track.name || !track.artist) {
+                    widget.innerHTML = `<span class="text-gray-600 font-mono text-[10px]">Incomplete track data</span>`;
+                    return;
+                }
+
+                const isPlaying = track['@attr'] && track['@attr'].nowplaying === 'true';
+                const trackName = escapeHTML(track.name);
+                const artistName = escapeHTML(track.artist['#text']);
+
+                widget.innerHTML = `
+                    <h4 class="font-bold text-red-400 mb-2 flex items-center gap-1.5 text-xs">
+                        <span class="flex h-2 w-2 relative">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full ${isPlaying ? 'bg-red-400' : 'bg-gray-500'} opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 ${isPlaying ? 'bg-red-500' : 'bg-gray-600'}"></span>
+                        </span>
+                        ${isPlaying ? 'Now Playing' : 'Last Scrobble'} (Last.fm)
+                    </h4>
+                    <div class="text-gray-300 font-sans text-xs font-medium truncate max-w-[220px]" title="${trackName}">
+                        🎵 ${trackName}
+                    </div>
+                    <div class="text-gray-400 font-mono text-[10px] truncate max-w-[220px]">
+                        by ${artistName}
+                    </div>
+                `;
             } catch (e) {
-                widget.innerHTML = `<span class="text-gray-600 font-mono text-[10px]">Last.fm stream offline</span>`;
+                console.error(e);
+                widget.innerHTML = `<span class="text-gray-600 font-mono text-[10px]">Last.fm cache empty</span>`;
             }
         }
+
         function renderFilterButtons() {
             const languages = new Set();
             allRepositories.forEach(repo => { if (repo.language) languages.add(repo.language); });
@@ -278,19 +293,24 @@
                 card.className = "custom-card p-6 rounded-2xl flex flex-col justify-between shadow-lg";
 
                 const tagsHTML = repo.topics && repo.topics.length > 0
-                    ? repo.topics.slice(0, 4).map(t => `<span class="bg-blue-950 text-blue-300 text-[10px] font-mono px-2 py-0.5 rounded border border-blue-800">${t}</span>`).join('')
-                    : `<span class="bg-slate-800 text-gray-400 text-[10px] font-mono px-2 py-0.5 rounded">${repo.language || 'Code'}</span>`;
+                    ? repo.topics.slice(0, 4).map(t => `<span class="bg-blue-950 text-blue-300 text-[10px] font-mono px-2 py-0.5 rounded border border-blue-800">${escapeHTML(t)}</span>`).join('')
+                    : `<span class="bg-slate-800 text-gray-400 text-[10px] font-mono px-2 py-0.5 rounded">${escapeHTML(repo.language || 'Code')}</span>`;
+
+                const safeName = escapeHTML(repo.name);
+                const safeUrl = encodeURI(repo.html_url || '#');
+                const safeDesc = escapeHTML(repo.description || 'No specialized engineering description provided for this repository yet.');
+                const safeLang = escapeHTML(repo.language || 'Multi');
 
                 card.innerHTML = `
                     <div>
                         <div class="flex items-center justify-between gap-2 mb-3">
                             <h3 class="text-base font-bold text-blue-400 hover:text-blue-300 transition-colors">
-                                <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                                <a href="${safeUrl}" target="_blank" rel="noopener noreferrer">${safeName}</a>
                             </h3>
                             <span class="text-xs text-gray-400 font-mono">⭐ ${repo.stargazers_count}</span>
                         </div>
                         <p class="text-gray-300 text-xs leading-relaxed line-clamp-4 mb-4">
-                            ${repo.description || 'No specialized engineering description provided for this repository yet.'}
+                            ${safeDesc}
                         </p>
                     </div>
                     <div>
@@ -298,7 +318,7 @@
                             ${tagsHTML}
                         </div>
                         <div class="text-[10px] text-gray-400 font-mono flex justify-between items-center pt-2 border-t border-gray-700">
-                            <span>Engine: <strong class="text-white">${repo.language || 'Multi'}</strong></span>
+                            <span>Engine: <strong class="text-white">${safeLang}</strong></span>
                             <span>Refactored: ${new Date(repo.updated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                         </div>
                     </div>

@@ -106,79 +106,48 @@
     </div>
 
     <script>
+        // Variáveis globais para armazenar o estado da aplicação
+        let allRepositories = [];
+        let activeFilter = 'Todos';
+
         async function fetchGitHubPortfolio() {
             const reposContainer = document.getElementById('repos-container');
             const loadingElement = document.getElementById('loading');
             const statsContainer = document.getElementById('profile-stats');
 
             try {
-                // Carrega o arquivo JSON perfeito que você gerou com a Action
                 const response = await fetch('./repos.json');
                 if (!response.ok) throw new Error('Cache não encontrado');
 
                 const data = await response.json();
-
-                // Mapeia os dados de forma limpa e direta
                 const profile = data.profile;
-                const repos = data.repositories;
+                allRepositories = data.repositories;
 
-                // Renderiza o painel de estatísticas no topo direito
+                // Renderiza o painel de estatísticas no topo
                 statsContainer.innerHTML = `
-                    <h4 class="font-bold text-blue-400 mb-3 border-b border-gray-700 pb-1 flex items-center gap-2">📊 Atividade GitHub</h4>
-                    <div class="space-y-1.5 text-gray-300 font-mono text-xs">
-                        <div>• Repos públicos: <span class="text-white font-bold">${profile.public_repos || 0}</span></div>
-                        <div>• Seguidores: <span class="text-emerald-400 font-bold">${profile.followers || 0}</span></div>
-                        <div>• Localização: <span class="text-gray-300">Limeira, SP</span></div>
-                    </div>
-                `;
+                <h4 class="font-bold text-blue-400 mb-3 border-b border-gray-700 pb-1 flex items-center gap-2">📊 Atividade GitHub</h4>
+                <div class="space-y-1.5 text-gray-300 font-mono text-xs">
+                    <div>• Repos públicos: <span class="text-white font-bold">${profile.public_repos || 0}</span></div>
+                    <div>• Seguidores: <span class="text-emerald-400 font-bold">${profile.followers || 0}</span></div>
+                    <div>• Localização: <span class="text-gray-300">Limeira, SP</span></div>
+                </div>
+            `;
 
-                // Filtra para remover forks e projetos antigos que você arquivou
-                const activeRepos = repos.filter(repo => repo && !repo.fork && !repo.archived);
+                // Filtra os repositórios válidos (ignora forks e arquivados)
+                allRepositories = allRepositories.filter(repo => repo && !repo.fork && !repo.archived);
 
                 loadingElement.classList.add('hidden');
 
-                if (activeRepos.length === 0) {
+                if (allRepositories.length === 0) {
                     loadingElement.innerHTML = `<span class="text-gray-500 font-mono text-xs">Nenhum repositório público ativo encontrado no cache.</span>`;
                     return;
                 }
 
-                reposContainer.classList.remove('hidden');
-                reposContainer.innerHTML = '';
+                // 1. Cria a barra de filtros dinamicamente antes de renderizar os cards
+                renderFilterButtons();
 
-                // Injeta os cards na tela de forma organizada
-                activeRepos.forEach(repo => {
-                    const card = document.createElement('div');
-                    card.className = "custom-card p-6 rounded-2xl flex flex-col justify-between shadow-lg";
-
-                    // Gera os tópicos/tags do projeto
-                    const tagsHTML = repo.topics && repo.topics.length > 0
-                        ? repo.topics.slice(0, 4).map(t => `<span class="bg-blue-950 text-blue-300 text-[10px] font-mono px-2 py-0.5 rounded border border-blue-800">${t}</span>`).join('')
-                        : `<span class="bg-slate-800 text-gray-400 text-[10px] font-mono px-2 py-0.5 rounded">${repo.language || 'Code'}</span>`;
-
-                    card.innerHTML = `
-                        <div>
-                            <div class="flex items-center justify-between gap-2 mb-3">
-                                <h3 class="text-base font-bold text-blue-400 hover:text-blue-300 transition-colors">
-                                    <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-                                </h3>
-                                <span class="text-xs text-gray-400 font-mono">⭐ ${repo.stargazers_count}</span>
-                            </div>
-                            <p class="text-slate-300 text-xs leading-relaxed line-clamp-4 mb-4">
-                                ${repo.description || 'Nenhuma descrição técnica adicionada ao repositório ainda.'}
-                            </p>
-                        </div>
-                        <div>
-                            <div class="flex flex-wrap gap-1.5 mb-4">
-                                ${tagsHTML}
-                            </div>
-                            <div class="text-[10px] text-gray-400 font-mono flex justify-between items-center pt-2 border-t border-gray-700">
-                                <span>Linguagem: <strong class="text-white">${repo.language || 'Vários'}</strong></span>
-                                <span>Atualizado: ${new Date(repo.updated_at).toLocaleDateString('pt-BR')}</span>
-                            </div>
-                        </div>
-                    `;
-                    reposContainer.appendChild(card);
-                });
+                // 2. Renderiza a lista inicial (Todos)
+                renderCards();
 
             } catch (error) {
                 console.error(error);
@@ -186,8 +155,110 @@
             }
         }
 
+        // Função que descobre as linguagens e desenha os botões na tela
+        function renderFilterButtons() {
+            // Seleciona as linguagens únicas presentes nos seus repositórios
+            const languages = new Set();
+            allRepositories.forEach(repo => {
+                if (repo.language) languages.add(repo.language);
+            });
+
+            // Converte o Set em Array e adiciona a opção padrão 'Todos'
+            const filterOptions = ['Todos', ...Array.from(languages).sort()];
+
+            // Cria o container para os botões logo acima do grid de repositórios
+            const headerSection = document.querySelector('section h2');
+
+            // Remove container de botões antigo se ele já existir (evita duplicação)
+            const oldBar = document.getElementById('filter-bar');
+            if (oldBar) oldBar.remove();
+
+            const filterBar = document.createElement('div');
+            filterBar.id = 'filter-bar';
+            filterBar.className = "flex flex-wrap gap-2 mb-8";
+
+            filterOptions.forEach(lang => {
+                const btn = document.createElement('button');
+                btn.textContent = lang;
+                btn.className = getButtonStyles(lang === activeFilter);
+
+                // Adiciona o evento de clique para atualizar o filtro
+                btn.addEventListener('click', () => {
+                    activeFilter = lang;
+                    renderFilterButtons(); // Redesenha os botões para atualizar o estado visual (ativo/inativo)
+                    renderCards();         // Filtra e redesenha os cards
+                });
+
+                filterBar.appendChild(btn);
+            });
+
+            // Insere a barra de botões logo após o título "Projetos em Destaque"
+            headerSection.insertAdjacentElement('afterend', filterBar);
+        }
+
+        // Retorna as classes CSS do Tailwind com base no estado do botão
+        function getButtonStyles(isActive) {
+            const base = "text-xs font-mono px-4 py-2 rounded-xl transition-all duration-200 border cursor-pointer ";
+            if (isActive) {
+                return base + "bg-blue-600 text-white border-blue-500 shadow-lg shadow-blue-500/20 font-bold";
+            }
+            return base + "bg-gray-900/60 text-gray-400 border-gray-800 hover:border-gray-700 hover:text-gray-200";
+        }
+
+        // Função responsável por filtrar a lista e renderizar os cards na tela
+        function renderCards() {
+            const reposContainer = document.getElementById('repos-container');
+            reposContainer.classList.remove('hidden');
+            reposContainer.innerHTML = '';
+
+            // Filtra a lista com base no botão selecionado
+            const filteredRepos = activeFilter === 'Todos'
+                ? allRepositories
+                : allRepositories.filter(repo => repo.language === activeFilter);
+
+            if (filteredRepos.length === 0) {
+                reposContainer.innerHTML = `<div class="col-span-full text-center py-12 text-gray-500 font-mono text-xs">Nenhum repositório encontrado para este filtro.</div>`;
+                return;
+            }
+
+            // Monta o HTML dos cards filtrados
+            filteredRepos.forEach(repo => {
+                const card = document.createElement('div');
+                card.className = "custom-card p-6 rounded-2xl flex flex-col justify-between shadow-lg animate-fadeIn";
+
+                const tagsHTML = repo.topics && repo.topics.length > 0
+                    ? repo.topics.slice(0, 4).map(t => `<span class="bg-blue-950 text-blue-300 text-[10px] font-mono px-2 py-0.5 rounded border border-blue-800">${t}</span>`).join('')
+                    : `<span class="bg-slate-800 text-gray-400 text-[10px] font-mono px-2 py-0.5 rounded">${repo.language || 'Code'}</span>`;
+
+                card.innerHTML = `
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                        <h3 class="text-base font-bold text-blue-400 hover:text-blue-300 transition-colors">
+                            <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                        </h3>
+                        <span class="text-xs text-gray-400 font-mono">⭐ ${repo.stargazers_count}</span>
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed line-clamp-4 mb-4">
+                        ${repo.description || 'Nenhuma descrição técnica adicionada ao repositório ainda.'}
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        ${tagsHTML}
+                    </div>
+                    <div class="text-[10px] text-gray-400 font-mono flex justify-between items-center pt-2 border-t border-gray-700">
+                        <span>Linguagem: <strong class="text-white">${repo.language || 'Vários'}</strong></span>
+                        <span>Atualizado: ${new Date(repo.updated_at).toLocaleDateString('pt-BR')}</span>
+                    </div>
+                </div>
+            `;
+                reposContainer.appendChild(card);
+            });
+        }
+
         document.addEventListener('DOMContentLoaded', fetchGitHubPortfolio);
     </script>
+
 
 </body>
 

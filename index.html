@@ -25,14 +25,12 @@
             box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.4);
         }
 
-        /* line-clamp-4: nativo no Tailwind 3.3+, mas garantimos o fallback */
         .line-clamp-4 {
             display: -webkit-box;
             -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
             overflow: hidden;
             line-clamp: 4;
-            /* Propriedade padrão que o editor pediu */
         }
     </style>
 </head>
@@ -41,35 +39,62 @@
 
     <div class="max-w-5xl mx-auto px-6 py-16">
 
-        <!-- SEÇÃO ESTÁTICA: SOBRE MIM -->
+        <!-- STATIC SECTION: ABOUT ME -->
         <section class="mb-16 border-b border-gray-700 pb-12">
             <div class="flex flex-col md:flex-row items-start justify-between gap-8">
                 <div class="flex-1">
                     <span class="text-xs font-bold tracking-widest text-blue-400 uppercase">Software Engineer & Systems
                         Analyst</span>
                     <h1
-                        class="text-4xl font-extrabold tracking-tight mt-1 mb-6 bg-gradient-to-r from-blue-400 via-indigo-400 to-emerald-400 bg-clip-text text-transparent">
+                        class="text-4xl font-extrabold tracking-tight mt-1 mb-4 bg-gradient-to-r from-blue-400 via-indigo-400 to-emerald-400 bg-clip-text text-transparent">
                         Gustavo Adrien Polli
                     </h1>
                     <p class="text-gray-300 leading-relaxed mb-4 text-base">
-                        Especialista em arquitetura de sistemas, engenharia de software e processamento de dados de alta
-                        performance. Desenvolvo desde motores gráficos retro e emuladores em <span
-                            class="text-amber-400 font-semibold">Rust/C++</span> até ecossistemas móveis completos
-                        voltados a analytics.
+                        Specialist in systems architecture, low-level engineering, and high-performance data pipelines.
+                        Building everything from retro graphics engines and emulation platforms in <span
+                            class="text-amber-400 font-semibold">Rust/C++</span> to resilient data-driven mobile
+                        ecosystems.
                     </p>
-                    <p class="text-gray-300 leading-relaxed text-base">
-                        Com base acadêmica sólida e pós-graduação em Gestão de TI, busco resolver problemas complexos na
-                        intersecção entre o hardware e o software de alto nível.
+                    <p class="text-gray-300 leading-relaxed text-base mb-6">
+                        Backed by solid academic roots and a postgraduate specialization in IT Management, I enjoy
+                        engineering clean solutions at the crossroads of hardware and high-level software.
                     </p>
-                </div>
 
+                    <!-- SOCIAL MATRIX STACK -->
+                    <div class="flex flex-wrap gap-3 items-center">
+                        <a href="https://www.linkedin.com/in/gapolli" target="_blank"
+                            class="bg-slate-900 border border-slate-700 hover:border-blue-500 text-gray-300 text-xs px-3 py-2 rounded-xl flex items-center gap-1.5 transition-colors">
+                            🔗 LinkedIn
+                        </a>
+                        <a href="#" onclick="revealEmail(event)" id="email-link"
+                            class="bg-slate-900 border border-slate-700 hover:border-blue-400 text-gray-300 text-xs px-3 py-2 rounded-xl flex items-center gap-1.5 transition-colors">
+                            ✉️ Email
+                        </a>
+                        <a href="https://buymeacoffee.com/gapolli" target="_blank"
+                            class="bg-slate-900 border border-slate-700 hover:border-amber-400 text-gray-300 text-xs px-3 py-2 rounded-xl flex items-center gap-1.5 transition-colors">
+                            ☕ BuyMeACoffee
+                        </a>
+                        <a href="https://www.instagram.com/polli.who" target="_blank"
+                            class="bg-slate-900 border border-slate-700 hover:border-pink-500 text-gray-300 text-xs px-3 py-2 rounded-xl flex items-center gap-1.5 transition-colors">
+                            📸 Instagram
+                        </a>
+                        <a href="https://gapolli.gumroad.com/" target="_blank"
+                            class="bg-slate-900 border border-slate-700 hover:border-orange-400 text-gray-300 text-xs px-3 py-2 rounded-xl flex items-center gap-1.5 transition-colors">
+                            📦 Gumroad
+                        </a>
+                        <a href="https://discordapp.com/users/gapolli" target="_blank"
+                            class="bg-slate-900 border border-slate-700 hover:border-indigo-500 text-gray-300 text-xs px-3 py-2 rounded-xl flex items-center gap-1.5 transition-colors">
+                            💬 Discord
+                        </a>
+                    </div>
+                </div>
                 <div id="profile-stats"
-                    class="w-full md:w-auto text-sm bg-gray-900/80 border border-gray-700 p-6 rounded-2xl shadow-xl min-w-[200px]">
-                    <span class="text-gray-400 font-mono text-xs">Carregando métricas...</span>
+                    class="w-full md:w-auto text-sm bg-gray-900/80 border border-gray-700 p-6 rounded-2xl shadow-xl min-w-[260px] space-y-4">
+                    <span class="text-gray-400 font-mono text-xs">Parsing metric caches...</span>
                 </div>
             </div>
 
-            <!-- Badges de Competências -->
+            <!-- Core Competency Badges -->
             <div class="flex flex-wrap gap-2 mt-8">
                 <span
                     class="bg-gray-800 text-gray-200 border border-gray-700 text-xs px-3 py-1.5 rounded-full font-mono font-medium">Rust</span>
@@ -87,28 +112,35 @@
             </div>
         </section>
 
-        <!-- SEÇÃO DINÂMICA: PROJETOS -->
+        <!-- DYNAMIC SECTION: REPOSITORIES -->
         <section>
             <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
                 <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                Projetos em Destaque
+                Featured Engineering Projects
             </h2>
 
             <div id="loading" class="text-center py-12 text-gray-400 font-mono text-sm">
-                Injetando dados do arquivo de cache local...
+                Injecting data assets from local repository cache...
             </div>
 
             <div id="repos-container" class="grid grid-cols-1 md:grid-cols-2 gap-6 hidden">
-                <!-- Injetado dinamicamente via JS -->
+                <!-- Dynamically injected via JS -->
             </div>
         </section>
 
     </div>
 
+    <!-- JavaScript Application Orchestration -->
     <script>
-        // Variáveis globais para armazenar o estado da aplicação
+        // EMAIL OFUSCAÇÃO — Constrói o link apenas no click, evitando scrapers
+        function revealEmail(event) {
+            event.preventDefault();
+            const email = 'gapolli' + '@yahoo.com.br';
+            window.location.href = 'mailto:' + email;
+        }
+
         let allRepositories = [];
-        let activeFilter = 'Todos';
+        let activeFilter = 'All';
 
         async function fetchGitHubPortfolio() {
             const reposContainer = document.getElementById('repos-container');
@@ -117,59 +149,88 @@
 
             try {
                 const response = await fetch('./repos.json');
-                if (!response.ok) throw new Error('Cache não encontrado');
+                if (!response.ok) throw new Error('Cache missing');
 
                 const data = await response.json();
                 const profile = data.profile;
                 allRepositories = data.repositories;
 
-                // Renderiza o painel de estatísticas no topo
+                // Render Profile Base Metrics
                 statsContainer.innerHTML = `
-                <h4 class="font-bold text-blue-400 mb-3 border-b border-gray-700 pb-1 flex items-center gap-2">📊 Atividade GitHub</h4>
-                <div class="space-y-1.5 text-gray-300 font-mono text-xs">
-                    <div>• Repos públicos: <span class="text-white font-bold">${profile.public_repos || 0}</span></div>
-                    <div>• Seguidores: <span class="text-emerald-400 font-bold">${profile.followers || 0}</span></div>
-                    <div>• Localização: <span class="text-gray-300">Limeira, SP</span></div>
-                </div>
-            `;
+                    <div>
+                        <h4 class="font-bold text-blue-400 mb-2 border-b border-gray-700 pb-1 flex items-center gap-2">📊 GitHub Metrics</h4>
+                        <div class="space-y-1 text-gray-300 font-mono text-xs">
+                            <div>• Public Repos: <span class="text-white font-bold">${profile.public_repos || 0}</span></div>
+                            <div>• Followers: <span class="text-emerald-400 font-bold">${profile.followers || 0}</span></div>
+                            <div>• Location: <span class="text-gray-300">Limeira, SP, BR</span></div>
+                        </div>
+                    </div>
+                    <div id="lastfm-widget" class="pt-2 border-t border-gray-800">
+                        <span class="text-gray-500 font-mono text-[10px] animate-pulse">Checking sound waves...</span>
+                    </div>
+                `;
 
-                // Filtra os repositórios válidos (ignora forks e arquivados)
+                // Fire async Last.fm scrobble check
+                fetchLastFMTrack();
+
                 allRepositories = allRepositories.filter(repo => repo && !repo.fork && !repo.archived);
-
                 loadingElement.classList.add('hidden');
 
                 if (allRepositories.length === 0) {
-                    loadingElement.innerHTML = `<span class="text-gray-500 font-mono text-xs">Nenhum repositório público ativo encontrado no cache.</span>`;
+                    loadingElement.innerHTML = `<span class="text-gray-500 font-mono text-xs">No active repositories found in cache.</span>`;
                     return;
                 }
 
-                // 1. Cria a barra de filtros dinamicamente antes de renderizar os cards
                 renderFilterButtons();
-
-                // 2. Renderiza a lista inicial (Todos)
                 renderCards();
 
             } catch (error) {
                 console.error(error);
-                loadingElement.innerHTML = `<span class="text-red-400 font-mono text-xs">Erro ao interpretar o cache do portfólio.</span>`;
+                loadingElement.innerHTML = `<span class="text-red-400 font-mono text-xs">Error parsing repository assets.</span>`;
             }
         }
 
-        // Função que descobre as linguagens e desenha os botões na tela
+        async function fetchLastFMTrack() {
+            const widget = document.getElementById('lastfm-widget');
+            try {
+                // Agora lê do arquivo cacheado pelo GitHub Actions
+                const cachedData = allRepositories._metadata?.lastfm_track || data.lastfm_track;
+                const lastfmData = cachedData?.recenttracks?.track;
+
+                if (lastfmData) {
+                    const track = Array.isArray(lastfmData) ? lastfmData[0] : lastfmData;
+                    const isPlaying = track['@attr'] && track['@attr'].nowplaying === 'true';
+                    const trackName = track.name;
+                    const artistName = track.artist['#text'];
+
+                    widget.innerHTML = `
+                <h4 class="font-bold text-red-400 mb-2 flex items-center gap-1.5 text-xs">
+                    <span class="flex h-2 w-2 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full ${isPlaying ? 'bg-red-400' : 'bg-gray-500'} opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 ${isPlaying ? 'bg-red-500' : 'bg-gray-600'}"></span>
+                    </span>
+                    ${isPlaying ? 'Now Playing' : 'Last Scrobble'} (Last.fm)
+                </h4>
+                <div class="text-gray-300 font-sans text-xs font-medium truncate max-w-[220px]" title="${trackName}">
+                    🎵 ${trackName}
+                </div>
+                <div class="text-gray-400 font-mono text-[10px] truncate max-w-[220px]">
+                    by ${artistName}
+                </div>
+            `;
+                } else {
+                    widget.innerHTML = `<span class="text-gray-600 font-mono text-[10px]">No tracks found for user 'gapolli'</span>`;
+                }
+            } catch (e) {
+                widget.innerHTML = `<span class="text-gray-600 font-mono text-[10px]">Last.fm stream offline</span>`;
+            }
+        }
         function renderFilterButtons() {
-            // Seleciona as linguagens únicas presentes nos seus repositórios
             const languages = new Set();
-            allRepositories.forEach(repo => {
-                if (repo.language) languages.add(repo.language);
-            });
-
-            // Converte o Set em Array e adiciona a opção padrão 'Todos'
-            const filterOptions = ['Todos', ...Array.from(languages).sort()];
-
-            // Cria o container para os botões logo acima do grid de repositórios
+            allRepositories.forEach(repo => { if (repo.language) languages.add(repo.language); });
+            const filterOptions = ['All', ...Array.from(languages).sort()];
             const headerSection = document.querySelector('section h2');
 
-            // Remove container de botões antigo se ele já existir (evita duplicação)
             const oldBar = document.getElementById('filter-bar');
             if (oldBar) oldBar.remove();
 
@@ -181,85 +242,73 @@
                 const btn = document.createElement('button');
                 btn.textContent = lang;
                 btn.className = getButtonStyles(lang === activeFilter);
-
-                // Adiciona o evento de clique para atualizar o filtro
                 btn.addEventListener('click', () => {
                     activeFilter = lang;
-                    renderFilterButtons(); // Redesenha os botões para atualizar o estado visual (ativo/inativo)
-                    renderCards();         // Filtra e redesenha os cards
+                    renderFilterButtons();
+                    renderCards();
                 });
-
                 filterBar.appendChild(btn);
             });
-
-            // Insere a barra de botões logo após o título "Projetos em Destaque"
             headerSection.insertAdjacentElement('afterend', filterBar);
         }
 
-        // Retorna as classes CSS do Tailwind com base no estado do botão
         function getButtonStyles(isActive) {
             const base = "text-xs font-mono px-4 py-2 rounded-xl transition-all duration-200 border cursor-pointer ";
-            if (isActive) {
-                return base + "bg-blue-600 text-white border-blue-500 shadow-lg shadow-blue-500/20 font-bold";
-            }
-            return base + "bg-gray-900/60 text-gray-400 border-gray-800 hover:border-gray-700 hover:text-gray-200";
+            return isActive
+                ? base + "bg-blue-600 text-white border-blue-500 shadow-lg shadow-blue-500/20 font-bold"
+                : base + "bg-gray-900/60 text-gray-400 border-gray-800 hover:border-gray-700 hover:text-gray-200";
         }
 
-        // Função responsável por filtrar a lista e renderizar os cards na tela
         function renderCards() {
             const reposContainer = document.getElementById('repos-container');
             reposContainer.classList.remove('hidden');
             reposContainer.innerHTML = '';
 
-            // Filtra a lista com base no botão selecionado
-            const filteredRepos = activeFilter === 'Todos'
+            const filteredRepos = activeFilter === 'All'
                 ? allRepositories
                 : allRepositories.filter(repo => repo.language === activeFilter);
 
             if (filteredRepos.length === 0) {
-                reposContainer.innerHTML = `<div class="col-span-full text-center py-12 text-gray-500 font-mono text-xs">Nenhum repositório encontrado para este filtro.</div>`;
+                reposContainer.innerHTML = `<div class="col-span-full text-center py-12 text-gray-500 font-mono text-xs">No repositories found matching this language setup.</div>`;
                 return;
             }
 
-            // Monta o HTML dos cards filtrados
             filteredRepos.forEach(repo => {
                 const card = document.createElement('div');
-                card.className = "custom-card p-6 rounded-2xl flex flex-col justify-between shadow-lg animate-fadeIn";
+                card.className = "custom-card p-6 rounded-2xl flex flex-col justify-between shadow-lg";
 
                 const tagsHTML = repo.topics && repo.topics.length > 0
                     ? repo.topics.slice(0, 4).map(t => `<span class="bg-blue-950 text-blue-300 text-[10px] font-mono px-2 py-0.5 rounded border border-blue-800">${t}</span>`).join('')
                     : `<span class="bg-slate-800 text-gray-400 text-[10px] font-mono px-2 py-0.5 rounded">${repo.language || 'Code'}</span>`;
 
                 card.innerHTML = `
-                <div>
-                    <div class="flex items-center justify-between gap-2 mb-3">
-                        <h3 class="text-base font-bold text-blue-400 hover:text-blue-300 transition-colors">
-                            <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-                        </h3>
-                        <span class="text-xs text-gray-400 font-mono">⭐ ${repo.stargazers_count}</span>
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <h3 class="text-base font-bold text-blue-400 hover:text-blue-300 transition-colors">
+                                <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                            </h3>
+                            <span class="text-xs text-gray-400 font-mono">⭐ ${repo.stargazers_count}</span>
+                        </div>
+                        <p class="text-gray-300 text-xs leading-relaxed line-clamp-4 mb-4">
+                            ${repo.description || 'No specialized engineering description provided for this repository yet.'}
+                        </p>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed line-clamp-4 mb-4">
-                        ${repo.description || 'Nenhuma descrição técnica adicionada ao repositório ainda.'}
-                    </p>
-                </div>
-                <div>
-                    <div class="flex flex-wrap gap-1.5 mb-4">
-                        ${tagsHTML}
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            ${tagsHTML}
+                        </div>
+                        <div class="text-[10px] text-gray-400 font-mono flex justify-between items-center pt-2 border-t border-gray-700">
+                            <span>Engine: <strong class="text-white">${repo.language || 'Multi'}</strong></span>
+                            <span>Refactored: ${new Date(repo.updated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                        </div>
                     </div>
-                    <div class="text-[10px] text-gray-400 font-mono flex justify-between items-center pt-2 border-t border-gray-700">
-                        <span>Linguagem: <strong class="text-white">${repo.language || 'Vários'}</strong></span>
-                        <span>Atualizado: ${new Date(repo.updated_at).toLocaleDateString('pt-BR')}</span>
-                    </div>
-                </div>
-            `;
+                `;
                 reposContainer.appendChild(card);
             });
         }
 
         document.addEventListener('DOMContentLoaded', fetchGitHubPortfolio);
     </script>
-
-
 </body>
 
 </html>

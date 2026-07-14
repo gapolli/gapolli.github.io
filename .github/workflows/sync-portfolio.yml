@@ -1,4 +1,4 @@
-name: Sincronizar Dados do Portfólio
+name: Sync Portfolio Data
 
 on:
   schedule:
@@ -16,17 +16,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout do código
+    - name: Checkout code
       uses: actions/checkout@v4
       with:
         persist-credentials: true
 
-    - name: Buscar dados do GitHub API e gerar arquivo unificado
+    - name: Fetch GitHub API data and generate unified file
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        echo "Buscando dados da API..."
-        # Endpoints corretos: api.github.com + nome de usuário + auth
+        echo "Fetching GitHub API data..."
         curl -s -H "Authorization: Bearer $GH_TOKEN" \
              -H "Accept: application/vnd.github+json" \
              "https://api.github.com/users/gapolli" -o profile.json
@@ -34,14 +33,31 @@ jobs:
              -H "Accept: application/vnd.github+json" \
              "https://api.github.com/users/gapolli/repos?sort=updated&per_page=100" -o repos_raw.json
         
-        echo "Agrupando dados com jq..."
-        # --slurpfile lê dos arquivos, evitando estouro de argumentos e problemas com escaping
+        echo "Merging data with jq..."
         jq -n --slurpfile prof profile.json --slurpfile repos repos_raw.json \
           '{profile: $prof[0], repositories: $repos[0]}' > repos.json
           
         rm profile.json repos_raw.json
 
-    - name: Commitar as alterações localmente
+    - name: Fetch Last.fm track data
+      continue-on-error: true
+      run: |
+        echo "Fetching Last.fm data..."
+        
+        if [ -z "${{ secrets.LASTFM_API_KEY }}" ]; then
+          echo "⚠️ LASTFM_API_KEY secret not configured. Skipping Last.fm fetch."
+          exit 0
+        fi
+        
+        curl -s "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=gapolli&api_key=${{ secrets.LASTFM_API_KEY }}&format=json&limit=1" > lastfm_temp.json
+        
+        echo "Integrating Last.fm data into repos.json..."
+        jq --slurpfile lastfm lastfm_temp.json '. + {lastfm_track: $lastfm[0]}' repos.json > repos_merged.json
+        mv repos_merged.json repos.json
+        
+        rm lastfm_temp.json
+
+    - name: Commit changes locally
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -50,10 +66,10 @@ jobs:
           git add repos.json
           git commit -m "chore: auto-update portfolio cache data [skip ci]"
         else
-          echo "Nenhuma alteração detectada nos repositórios."
+          echo "No changes detected in repository data."
         fi
 
-    - name: Push das alterações com Autenticação
+    - name: Push changes with authentication
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

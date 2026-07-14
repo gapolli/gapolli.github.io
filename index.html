@@ -29,8 +29,9 @@
         .line-clamp-4 {
             display: -webkit-box;
             -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
+            -webkit-box-orient: vertical;  
             overflow: hidden;
+            line-clamp: 4; /* Propriedade padrão que o editor pediu */
         }
     </style>
 </head>
@@ -110,28 +111,40 @@
             const statsContainer = document.getElementById('profile-stats');
 
             try {
-                // Como a Action já passou, o fetch local funcionará de primeira
                 const response = await fetch('./repos.json');
                 if (!response.ok) throw new Error('Cache não encontrado');
 
                 const data = await response.json();
 
-                // O operador slurpfile do jq coloca os objetos dentro de arrays, tratamos aqui:
+                // CORREÇÃO AQUI: Garante o desempacotamento correto caso o jq salve como array
                 const profile = Array.isArray(data.profile) ? data.profile[0] : data.profile;
                 const repos = Array.isArray(data.repositories) ? data.repositories[0] : data.repositories;
 
-                statsContainer.innerHTML = `
-                    <h4 class="font-bold text-blue-400 mb-3 border-b border-gray-700 pb-1 flex items-center gap-2">📊 Atividade GitHub</h4>
-                    <div class="space-y-1.5 text-gray-300 font-mono text-xs">
-                        <div>• Repos públicos: <span class="text-white font-bold">${profile.public_repos}</span></div>
-                        <div>• Seguidores: <span class="text-emerald-400 font-bold">${profile.followers}</span></div>
-                        <div>• Localização: <span class="text-gray-300">Limeira, SP</span></div>
-                    </div>
-                `;
+                // Segurança extra caso o slurpfile aninhe de outra forma
+                const finalProfile = Array.isArray(profile) ? profile[0] : profile;
+                const finalRepos = Array.isArray(repos) ? repos : (repos.repositories || repos);
 
-                const activeRepos = repos.filter(repo => !repo.fork && !repo.archived);
+                statsContainer.innerHTML = `
+                <h4 class="font-bold text-blue-400 mb-3 border-b border-gray-700 pb-1 flex items-center gap-2">📊 Atividade GitHub</h4>
+                <div class="space-y-1.5 text-gray-300 font-mono text-xs">
+                    <div>• Repos públicos: <span class="text-white font-bold">${finalProfile.public_repos || 0}</span></div>
+                    <div>• Seguidores: <span class="text-emerald-400 font-bold">${finalProfile.followers || 0}</span></div>
+                    <div>• Localização: <span class="text-gray-300">Limeira, SP</span></div>
+                </div>
+            `;
+
+                // Garante que temos uma lista válida para iterar
+                const listToRender = Array.isArray(finalRepos) ? finalRepos : [];
+                const activeRepos = listToRender.filter(repo => repo && !repo.fork && !repo.archived);
 
                 loadingElement.classList.add('hidden');
+
+                if (activeRepos.length === 0) {
+                    loadingElement.innerHTML = `<span class="text-gray-500 font-mono text-xs">Nenhum repositório público ativo encontrado no cache.</span>`;
+                    loadingElement.classList.remove('hidden');
+                    return;
+                }
+
                 reposContainer.classList.remove('hidden');
                 reposContainer.innerHTML = '';
 
@@ -141,37 +154,38 @@
 
                     const tagsHTML = repo.topics && repo.topics.length > 0
                         ? repo.topics.slice(0, 4).map(t => `<span class="bg-blue-950 text-blue-300 text-[10px] font-mono px-2 py-0.5 rounded border border-blue-800">${t}</span>`).join('')
-                        : `<span class="bg-gray-800 text-gray-400 text-[10px] font-mono px-2 py-0.5 rounded">${repo.language || 'Code'}</span>`;
+                        : `<span class="bg-slate-800 text-gray-400 text-[10px] font-mono px-2 py-0.5 rounded">${repo.language || 'Code'}</span>`;
 
                     card.innerHTML = `
-                        <div>
-                            <div class="flex items-center justify-between gap-2 mb-3">
-                                <h3 class="text-base font-bold text-blue-400 hover:text-blue-300 transition-colors">
-                                    <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-                                </h3>
-                                <span class="text-xs text-gray-400 font-mono">⭐ ${repo.stargazers_count}</span>
-                            </div>
-                            <p class="text-gray-300 text-xs leading-relaxed line-clamp-4 mb-4">
-                                ${repo.description || 'Nenhuma descrição técnica adicionada ao repositório ainda.'}
-                            </p>
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <h3 class="text-base font-bold text-blue-400 hover:text-blue-300 transition-colors">
+                                <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                            </h3>
+                            <span class="text-xs text-slate-400 font-mono">⭐ ${repo.stargazers_count}</span>
                         </div>
-                        <div>
-                            <div class="flex flex-wrap gap-1.5 mb-4">
-                                ${tagsHTML}
-                            </div>
-                            <div class="text-[10px] text-gray-400 font-mono flex justify-between items-center pt-2 border-t border-gray-700">
-                                <span>Linguagem: <strong class="text-white">${repo.language || 'Vários'}</strong></span>
-                                <span>Atualizado: ${new Date(repo.updated_at).toLocaleDateString('pt-BR')}</span>
-                            </div>
+                        <p class="text-slate-300 text-xs leading-relaxed line-clamp-4 mb-4">
+                            ${repo.description || 'Nenhuma descrição técnica adicionada ao repositório ainda.'}
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            ${tagsHTML}
                         </div>
-                    `;
+                        <div class="text-[10px] text-gray-400 font-mono flex justify-between items-center pt-2 border-t border-slate-700">
+                            <span>Linguagem: <strong class="text-white">${repo.language || 'Vários'}</strong></span>
+                            <span>Atualizado: ${new Date(repo.updated_at).toLocaleDateString('pt-BR')}</span>
+                        </div>
+                    </div>
+                `;
                     reposContainer.appendChild(card);
                 });
 
             } catch (error) {
                 console.error(error);
-                loadingElement.innerHTML = `<span class="text-red-400 font-mono text-xs">Erro ao interpretar o cache do portfólio. Certifique-se de que a Action gerou os dados corretamente.</span>`;
+                loadingElement.innerHTML = `<span class="text-red-400 font-mono text-xs">Erro ao processar as chaves do cache local.</span>`;
             }
+
         }
 
         document.addEventListener('DOMContentLoaded', fetchGitHubPortfolio);

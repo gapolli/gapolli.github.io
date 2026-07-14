@@ -19,15 +19,22 @@ jobs:
     - name: Checkout do código
       uses: actions/checkout@v4
       with:
-        persist-credentials: true # Mantém as credenciais ativas para o push
+        persist-credentials: true
 
     - name: Buscar dados do GitHub API e gerar arquivo unificado
       run: |
-        PROFILE_JSON=$(curl -s https://github.com/gapolli)
-        REPOS_JSON=$(curl -s "https://github.com/gapolli/repos?sort=updated&per_page=100")
+        echo "Buscando dados da API..."
+        # Faz o download direto para arquivos temporários usando os endpoints corretos da API
+        curl -s "https://github.com/gapolli" -o profile.json
+        curl -s "https://github.com/gapolli/repos?sort=updated&per_page=100" -o repos_raw.json
         
-        jq -n --argjson prof "$PROFILE_JSON" --argjson repos "$REPOS_JSON" \
+        echo "Agrupando dados com jq..."
+        # O operador --argfile lê os arquivos direto do disco, evitando estouro de memória no terminal
+        jq -n --argfile prof profile.json --argfile repos repos_raw.json \
           '{profile: $prof, repositories: $repos}' > repos.json
+          
+        # Limpa os arquivos temporários
+        rm profile.json repos_raw.json
 
     - name: Commitar as alterações localmente
       run: |

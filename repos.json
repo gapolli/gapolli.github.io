@@ -27,14 +27,145 @@
     "hireable": true,
     "bio": "Life hacking since 80's 🚀 Systems Analyst & Computer Tech with Postgrad specializations in IT Management, Programming and Gamification.",
     "twitter_username": null,
-    "public_repos": 31,
+    "public_repos": 32,
     "public_gists": 0,
-    "followers": 243,
-    "following": 773,
+    "followers": 249,
+    "following": 781,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-07-14T16:48:26Z"
   },
   "repositories": [
+    {
+      "id": 1302337477,
+      "node_id": "R_kgDOTaAXxQ",
+      "name": "kinect-creative-studio",
+      "full_name": "gapolli/kinect-creative-studio",
+      "private": false,
+      "owner": {
+        "login": "gapolli",
+        "id": 13264138,
+        "node_id": "MDQ6VXNlcjEzMjY0MTM4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13264138?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gapolli",
+        "html_url": "https://github.com/gapolli",
+        "followers_url": "https://api.github.com/users/gapolli/followers",
+        "following_url": "https://api.github.com/users/gapolli/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gapolli/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gapolli/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gapolli/subscriptions",
+        "organizations_url": "https://api.github.com/users/gapolli/orgs",
+        "repos_url": "https://api.github.com/users/gapolli/repos",
+        "events_url": "https://api.github.com/users/gapolli/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gapolli/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/gapolli/kinect-creative-studio",
+      "description": "A computer vision and generative art workbench to repurpose Xbox Kinect V1 and standard Webcams. Converts real-time depth/luma matrices into colorized ANSI ASCII text streams and utilizes edge ML decision trees for local gesture classification, dynamic calibration, and custom mapping to global OS hotkeys.",
+      "fork": false,
+      "url": "https://api.github.com/repos/gapolli/kinect-creative-studio",
+      "forks_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/forks",
+      "keys_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/teams",
+      "hooks_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/hooks",
+      "issue_events_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/events",
+      "assignees_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/tags",
+      "blobs_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/languages",
+      "stargazers_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/stargazers",
+      "contributors_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/contributors",
+      "subscribers_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/subscribers",
+      "subscription_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/subscription",
+      "commits_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/merges",
+      "archive_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/downloads",
+      "issues_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/labels{/name}",
+      "releases_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/gapolli/kinect-creative-studio/deployments",
+      "created_at": "2026-07-16T05:06:42Z",
+      "updated_at": "2026-07-16T05:28:10Z",
+      "pushed_at": "2026-07-16T05:24:36Z",
+      "git_url": "git://github.com/gapolli/kinect-creative-studio.git",
+      "ssh_url": "git@github.com:gapolli/kinect-creative-studio.git",
+      "clone_url": "https://github.com/gapolli/kinect-creative-studio.git",
+      "svn_url": "https://github.com/gapolli/kinect-creative-studio",
+      "homepage": "",
+      "size": 23,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "Python",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": false,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [
+        "ascii-art",
+        "computer-vision",
+        "cython",
+        "edge-ai",
+        "gesture-recognition",
+        "interactive-art",
+        "kinect-v1",
+        "libfreenect",
+        "machine-learning",
+        "opencv",
+        "pyside6",
+        "python",
+        "python-hardware",
+        "scikit-learn"
+      ],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "permissions": {
+        "admin": false,
+        "maintain": false,
+        "push": false,
+        "triage": false,
+        "pull": false
+      }
+    },
     {
       "id": 1299935085,
       "node_id": "R_kgDOTXtvbQ",
@@ -103,14 +234,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-07-15T01:56:33Z",
-      "pushed_at": "2026-07-15T01:56:29Z",
+      "updated_at": "2026-07-16T02:06:40Z",
+      "pushed_at": "2026-07-16T02:06:36Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1121,
+      "size": 1140,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3773,40 +3904,40 @@
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/b912e46144d6cbfe61fb4a9260b5557a.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/410f5aa2f54683131c9b5a29db15ae89.gif"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/b912e46144d6cbfe61fb4a9260b5557a.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/410f5aa2f54683131c9b5a29db15ae89.gif"
             },
             {
               "size": "large",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/b912e46144d6cbfe61fb4a9260b5557a.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/410f5aa2f54683131c9b5a29db15ae89.gif"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b912e46144d6cbfe61fb4a9260b5557a.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/410f5aa2f54683131c9b5a29db15ae89.gif"
             }
           ],
-          "mbid": "65fce278-ab3b-4166-854a-aea5664c1f92",
+          "mbid": "",
           "album": {
             "mbid": "",
-            "#text": "In Through The Out Door (Deluxe Edition)"
+            "#text": "The Song Remains The Same (Remaster)"
           },
-          "name": "All My Love",
-          "url": "https://www.last.fm/music/Led+Zeppelin/_/All+My+Love",
+          "name": "The Rain Song",
+          "url": "https://www.last.fm/music/Led+Zeppelin/_/The+Rain+Song",
           "date": {
-            "uts": "1784067684",
-            "#text": "14 Jul 2026, 22:21"
+            "uts": "1784238700",
+            "#text": "16 Jul 2026, 21:51"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "133616",
+        "totalPages": "133687",
         "page": "1",
         "perPage": "1",
-        "total": "133616"
+        "total": "133687"
       }
     }
   }

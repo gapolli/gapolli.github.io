@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 253,
+    "followers": 255,
     "following": 784,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-07-17T20:23:21Z"
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-07-17T02:09:46Z",
-      "pushed_at": "2026-07-17T02:09:42Z",
+      "updated_at": "2026-07-18T01:59:11Z",
+      "pushed_at": "2026-07-18T01:59:08Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1142,
+      "size": 1160,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "678d88b2-87b0-403b-b63d-5da7465aecc3",
-            "#text": "Led Zeppelin"
+            "mbid": "7f74bf11-d450-4b85-b11d-4ca4131eedd5",
+            "#text": "Das Ich"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/410f5aa2f54683131c9b5a29db15ae89.gif"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/276277e19b3c6e09da7d96f09b6fc0b2.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/410f5aa2f54683131c9b5a29db15ae89.gif"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/276277e19b3c6e09da7d96f09b6fc0b2.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/410f5aa2f54683131c9b5a29db15ae89.gif"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/276277e19b3c6e09da7d96f09b6fc0b2.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/410f5aa2f54683131c9b5a29db15ae89.gif"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/276277e19b3c6e09da7d96f09b6fc0b2.jpg"
             }
           ],
-          "mbid": "",
+          "mbid": "378510b3-53da-3ac5-b52e-0ee56e09480b",
           "album": {
-            "mbid": "",
-            "#text": "The Song Remains The Same (Remaster)"
+            "mbid": "04a3c588-b6b2-4f14-9a23-c235b7093552",
+            "#text": "Relikt"
           },
-          "name": "The Rain Song",
-          "url": "https://www.last.fm/music/Led+Zeppelin/_/The+Rain+Song",
+          "name": "Das Dunkle Land",
+          "url": "https://www.last.fm/music/Das+Ich/_/Das+Dunkle+Land",
           "date": {
-            "uts": "1784238700",
-            "#text": "16 Jul 2026, 21:51"
+            "uts": "1784406207",
+            "#text": "18 Jul 2026, 20:23"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "133687",
+        "totalPages": "133741",
         "page": "1",
         "perPage": "1",
-        "total": "133687"
+        "total": "133741"
       }
     }
   }

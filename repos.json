@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 255,
+    "followers": 260,
     "following": 784,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-07-17T20:23:21Z"
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-07-19T02:10:24Z",
-      "pushed_at": "2026-07-19T02:10:20Z",
+      "updated_at": "2026-07-20T02:30:47Z",
+      "pushed_at": "2026-07-20T02:30:43Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1162,
+      "size": 1180,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "7f74bf11-d450-4b85-b11d-4ca4131eedd5",
-            "#text": "Das Ich"
+            "mbid": "881cebec-b549-4ec2-a396-f0d773244e1e",
+            "#text": "Public Body"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/276277e19b3c6e09da7d96f09b6fc0b2.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/ee8e57a8f1aa45427273297b04c0801d.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/276277e19b3c6e09da7d96f09b6fc0b2.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/ee8e57a8f1aa45427273297b04c0801d.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/276277e19b3c6e09da7d96f09b6fc0b2.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/ee8e57a8f1aa45427273297b04c0801d.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/276277e19b3c6e09da7d96f09b6fc0b2.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/ee8e57a8f1aa45427273297b04c0801d.jpg"
             }
           ],
-          "mbid": "378510b3-53da-3ac5-b52e-0ee56e09480b",
+          "mbid": "",
           "album": {
-            "mbid": "04a3c588-b6b2-4f14-9a23-c235b7093552",
-            "#text": "Relikt"
+            "mbid": "",
+            "#text": "Big Mess"
           },
-          "name": "Das Dunkle Land",
-          "url": "https://www.last.fm/music/Das+Ich/_/Das+Dunkle+Land",
+          "name": "Driven By Data",
+          "url": "https://www.last.fm/music/Public+Body/_/Driven+By+Data",
           "date": {
-            "uts": "1784406207",
-            "#text": "18 Jul 2026, 20:23"
+            "uts": "1784588526",
+            "#text": "20 Jul 2026, 23:02"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "133741",
+        "totalPages": "133794",
         "page": "1",
         "perPage": "1",
-        "total": "133741"
+        "total": "133794"
       }
     }
   }

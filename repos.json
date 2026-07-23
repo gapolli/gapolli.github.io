@@ -29,10 +29,10 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 261,
-    "following": 784,
+    "followers": 263,
+    "following": 792,
     "created_at": "2015-07-09T23:33:51Z",
-    "updated_at": "2026-07-17T20:23:21Z"
+    "updated_at": "2026-07-23T14:21:57Z"
   },
   "repositories": [
     {
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/fantasyconsole/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/fantasyconsole/deployments",
       "created_at": "2026-07-12T16:30:07Z",
-      "updated_at": "2026-07-22T23:56:13Z",
-      "pushed_at": "2026-07-22T23:56:07Z",
+      "updated_at": "2026-07-23T03:10:38Z",
+      "pushed_at": "2026-07-23T03:10:33Z",
       "git_url": "git://github.com/gapolli/fantasyconsole.git",
       "ssh_url": "git@github.com:gapolli/fantasyconsole.git",
       "clone_url": "https://github.com/gapolli/fantasyconsole.git",
       "svn_url": "https://github.com/gapolli/fantasyconsole",
       "homepage": "",
-      "size": 64,
+      "size": 86,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "Rust",
@@ -235,14 +235,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-07-22T02:07:21Z",
-      "pushed_at": "2026-07-22T02:07:16Z",
+      "updated_at": "2026-07-23T02:13:38Z",
+      "pushed_at": "2026-07-23T16:17:21Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1200,
+      "size": 1203,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "",
-            "#text": "Bauhaus"
+            "mbid": "8ffcd7d7-6293-4fbf-b0f6-46aef9ce9f69",
+            "#text": "Seefeel"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/c4a80deca9ab41c7b0729aef5beb2ad9.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/56ad73ff233db85a9defa1a8fd340b45.png"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/c4a80deca9ab41c7b0729aef5beb2ad9.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/56ad73ff233db85a9defa1a8fd340b45.png"
             },
             {
               "size": "large",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/c4a80deca9ab41c7b0729aef5beb2ad9.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/56ad73ff233db85a9defa1a8fd340b45.png"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/c4a80deca9ab41c7b0729aef5beb2ad9.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/56ad73ff233db85a9defa1a8fd340b45.png"
             }
           ],
-          "mbid": "b94d2664-d2a8-4539-b00f-2457dd05783b",
+          "mbid": "0be2cd7f-095d-3a0f-b957-73ce5188c8f3",
           "album": {
             "mbid": "",
-            "#text": "This Is for When (Hammersmith Palais - 9th November 1981)"
+            "#text": "Quique (Redux Edition)"
           },
-          "name": "Dancing",
-          "url": "https://www.last.fm/music/Bauhaus/_/Dancing",
+          "name": "Polyfusion",
+          "url": "https://www.last.fm/music/Seefeel/_/Polyfusion",
           "date": {
-            "uts": "1784762231",
-            "#text": "22 Jul 2026, 23:17"
+            "uts": "1784806691",
+            "#text": "23 Jul 2026, 11:38"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "134107",
+        "totalPages": "134122",
         "page": "1",
         "perPage": "1",
-        "total": "134107"
+        "total": "134122"
       }
     }
   }

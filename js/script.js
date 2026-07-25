@@ -215,15 +215,16 @@ function renderCards() {
                             <span>Clone</span>
                         </button>
 
-                        <!-- Demo Button (appears only if has_pages is true) -->
+                        <!-- Launch Button (appears only if has_pages is true) -->
                         ${
                             repo.has_pages
                                 ? `<a href="https://gapolli.github.io/${repo.name}/" target="_blank" rel="noopener noreferrer"
                                        class="flex items-center gap-1 text-xs text-orange-400 hover:text-orange-300 transition-colors group"
-                                       title="View live demo">
-                                       <svg class="w-3 h-3 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 16 16">
-                                           <path d="M8.293 1.5a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L13.586 8 4.293 2.707a1 1 0 010-1.414L8.293 1.5zM3 10v5a1 1 0 001 1h8a1 1 0 001-1v-5h-2v5H5v-5H3z"/>
+                                       title="Launch live demo">
+                                       <svg class="w-3.5 h-3.5 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                                           <path d="M12.5 2c-2.25 0-4.5 1.5-5.5 4l-.5 1.5-1.5-.5C4.5 6.5 3.5 6.5 2.5 7c-.5.5-.5 1.5 0 2l1 1-1 1c-.5.5-.5 1.5 0 2 .5.5 1.5.5 2 0l1-1 1 1c.5.5 1.5.5 2 0 .5-.5.5-1.5 0-2l-.5-1.5 1.5-.5c2.5-1 4-3.25 4-5.5C13.5 4 13 2 12.5 2zm-7 10c-.5.5-1.5.5-2 0-.5-.5-.5-1.5 0-2l1-1 1 1c.5.5.5 1.5 0 2zM8 10l-1-1 1-1 1 1-1 1zm4.5-4.5l-1.5.5-.5 1.5c-.5.5-1.5.5-2 0-.5-.5-.5-1.5 0-2l1-1 1-1c.5-.5 1.5-.5 2 0 .5.5.5 1.5 0 2l-.5 1.5z"/>
                                        </svg>
+                                       <span>Launch</span>
                                    </a>`
                                 : ''
                         }

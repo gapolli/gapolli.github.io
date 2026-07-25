@@ -213,6 +213,14 @@ function renderCards() {
                 <div class="flex flex-wrap gap-1.5 mb-4">
                     ${tagsHTML}
                 </div>
+                ${
+                    repo.has_pages
+                        ? `<a href="https://gapolli.github.io/${repo.name}/" target="_blank" rel="noopener noreferrer"
+                               class="inline-block mb-4 text-xs font-mono text-blue-400 hover:text-blue-300 transition-colors border border-blue-800 hover:border-blue-600 rounded px-3 py-1.5">
+                               🚀 View Demo
+                           </a>`
+                        : ''
+                }
                 <div class="text-[10px] text-gray-400 font-mono flex justify-between items-center pt-2 border-t border-gray-700">
                     <span>Engine: <strong class="text-white">${safeLang}</strong></span>
                     <span>Refactored: ${new Date(repo.updated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>

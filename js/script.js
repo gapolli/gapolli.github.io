@@ -167,122 +167,6 @@ function renderCards() {
         const safeName = escapeHTML(repo.name);
         const safeUrl = encodeURI(repo.html_url || '#');
         const forkUrl = `${repo.html_url}/fork`;
-        const safeDesc = escapeHTML(repo.description || 'No specialized engineering description provided for this repository yet.');
-        const safeLang = escapeHTML(repo.language || 'Multi');
-
-        const tagsHTML = repo.topics && repo.topics.length > 0
-            ? repo.topics.slice(0, 4).map(t => `<span class="bg-blue-950 text-blue-300 text-[10px] font-mono px-2 py-0.5 rounded border border-blue-800">${escapeHTML(t)}</span>`).join('')
-            : `<span class="bg-slate-800 text-gray-400 text-[10px] font-mono px-2 py-0.5 rounded">${escapeHTML(repo.language || 'Code')}</span>`;
-
-        const card = document.createElement('div');
-        card.className = "custom-card p-6 rounded-2xl flex flex-col justify-between shadow-lg";
-
-        card.innerHTML = `
-            <div>
-                <div class="flex items-center justify-between gap-2 mb-3">
-                    <h3 class="text-base font-bold text-blue-400 hover:text-blue-300 transition-colors">
-                        <a href="${safeUrl}" target="_blank" rel="noopener noreferrer">${safeName}</a>
-                    </h3>
-                    <div class="flex items-center gap-1.5">
-                        <!-- Star: leva ao repositório para dar star -->
-                        <a href="${safeUrl}" target="_blank" rel="noopener noreferrer"
-                           class="flex items-center gap-1 text-xs text-yellow-500 hover:text-yellow-400 transition-colors group"
-                           title="Star this repository on GitHub">
-                            <svg class="w-3 h-3 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 16 16">
-                                <path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
-                            </svg>
-                            <span>${repo.stargazers_count}</span>
-                        </a>
-
-                        <!-- Fork: inicia processo de fork no GitHub -->
-                        <a href="${forkUrl}" target="_blank" rel="noopener noreferrer"
-                           class="flex items-center gap-1 text-xs text-purple-400 hover:text-purple-300 transition-colors group"
-                           title="Fork this repository on GitHub">
-                            <svg class="w-3 h-3 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
-                            </svg>
-                            <span>${repo.forks_count}</span>
-                        </a>
-                    </div>
-                </div>
-                <p class="text-gray-300 text-xs leading-relaxed line-clamp-4 mb-4">
-                    ${safeDesc}
-                </p>
-            </div>
-            <div>
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                    ${tagsHTML}
-                </div>
-                ${
-                    repo.has_pages
-                        ? `<a href="https://gapolli.github.io/${repo.name}/" target="_blank" rel="noopener noreferrer"
-                               class="inline-block mb-4 text-xs font-mono text-blue-400 hover:text-blue-300 transition-colors border border-blue-800 hover:border-blue-600 rounded px-3 py-1.5">
-                               🚀 View Demo
-                           </a>`
-                        : ''
-                }
-                <div class="text-[10px] text-gray-400 font-mono flex justify-between items-center pt-2 border-t border-gray-700">
-                    <span>Engine: <strong class="text-white">${safeLang}</strong></span>
-                    <span>Refactored: ${new Date(repo.updated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
-                </div>
-            </div>
-        `;
-        reposContainer.appendChild(card);
-    });
-}
-
-function openCloneModal(repoUrl, repoName) {
-    if (!cloneModal) {
-        cloneModal = document.getElementById('clone-modal');
-    }
-    
-    if (cloneModal) {
-        document.getElementById('clone-url').textContent = repoUrl;
-        document.getElementById('clone-repo-name').textContent = repoName;
-        cloneModal.classList.remove('hidden');
-    }
-}
-
-// Função para fechar modal
-function closeCloneModal() {
-    if (cloneModal) {
-        cloneModal.classList.add('hidden');
-    }
-}
-
-// Função para copiar URL de clone
-function copyCloneUrl() {
-    const urlText = document.getElementById('clone-url').textContent;
-    navigator.clipboard.writeText(urlText).then(() => {
-        const btn = document.getElementById('copy-btn');
-        const originalText = btn.textContent;
-        btn.textContent = 'Copied! ✓';
-        btn.classList.add('text-green-400');
-        setTimeout(() => {
-            btn.textContent = originalText;
-            btn.classList.remove('text-green-400');
-        }, 2000);
-    });
-}
-
-function renderCards() {
-    const reposContainer = document.getElementById('repos-container');
-    reposContainer.classList.remove('hidden');
-    reposContainer.innerHTML = '';
-
-    const filteredRepos = activeFilter === 'All'
-        ? allRepositories
-        : allRepositories.filter(repo => repo.language === activeFilter);
-
-    if (filteredRepos.length === 0) {
-        reposContainer.innerHTML = `<div class="col-span-full text-center py-12 text-gray-500 font-mono text-xs">No repositories found matching this language setup.</div>`;
-        return;
-    }
-
-    filteredRepos.forEach(repo => {
-        const safeName = escapeHTML(repo.name);
-        const safeUrl = encodeURI(repo.html_url || '#');
-        const forkUrl = `${repo.html_url}/fork`;
         const cloneUrl = repo.clone_url || repo.html_url + '.git';
         const safeDesc = escapeHTML(repo.description || 'No specialized engineering description provided for this repository yet.');
         const safeLang = escapeHTML(repo.language || 'Multi');
@@ -340,6 +224,14 @@ function renderCards() {
                 <div class="flex flex-wrap gap-1.5 mb-4">
                     ${tagsHTML}
                 </div>
+                ${
+                    repo.has_pages
+                        ? `<a href="https://gapolli.github.io/${repo.name}/" target="_blank" rel="noopener noreferrer"
+                               class="inline-block mb-4 text-xs font-mono text-blue-400 hover:text-blue-300 transition-colors border border-blue-800 hover:border-blue-600 rounded px-3 py-1.5">
+                               🚀 View Demo
+                           </a>`
+                        : ''
+                }
                 <div class="text-[10px] text-gray-400 font-mono flex justify-between items-center pt-2 border-t border-gray-700">
                     <span>Engine: <strong class="text-white">${safeLang}</strong></span>
                     <span>Refactored: ${new Date(repo.updated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
@@ -347,6 +239,40 @@ function renderCards() {
             </div>
         `;
         reposContainer.appendChild(card);
+    });
+}
+
+function openCloneModal(repoUrl, repoName) {
+    if (!cloneModal) {
+        cloneModal = document.getElementById('clone-modal');
+    }
+
+    if (cloneModal) {
+        document.getElementById('clone-url').textContent = repoUrl;
+        document.getElementById('clone-repo-name').textContent = repoName;
+        cloneModal.classList.remove('hidden');
+    }
+}
+
+// Função para fechar modal
+function closeCloneModal() {
+    if (cloneModal) {
+        cloneModal.classList.add('hidden');
+    }
+}
+
+// Função para copiar URL de clone
+function copyCloneUrl() {
+    const urlText = document.getElementById('clone-url').textContent;
+    navigator.clipboard.writeText(urlText).then(() => {
+        const btn = document.getElementById('copy-btn');
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied! ✓';
+        btn.classList.add('text-green-400');
+        setTimeout(() => {
+            btn.textContent = originalText;
+            btn.classList.remove('text-green-400');
+        }, 2000);
     });
 }
 

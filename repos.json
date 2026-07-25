@@ -29,10 +29,10 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 262,
-    "following": 793,
+    "followers": 265,
+    "following": 796,
     "created_at": "2015-07-09T23:33:51Z",
-    "updated_at": "2026-07-23T22:01:22Z"
+    "updated_at": "2026-07-24T22:40:18Z"
   },
   "repositories": [
     {
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-07-23T16:23:40Z",
-      "pushed_at": "2026-07-23T16:23:32Z",
+      "updated_at": "2026-07-24T02:10:16Z",
+      "pushed_at": "2026-07-24T02:10:12Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1247,
+      "size": 1267,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "8ffcd7d7-6293-4fbf-b0f6-46aef9ce9f69",
-            "#text": "Seefeel"
+            "mbid": "8cf95123-5023-4257-933e-4d7ebbc5d8a2",
+            "#text": "Lord of the Lost"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/56ad73ff233db85a9defa1a8fd340b45.png"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/06a4f8fbfbbc456ec5152c8dcf78d574.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/56ad73ff233db85a9defa1a8fd340b45.png"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/06a4f8fbfbbc456ec5152c8dcf78d574.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/56ad73ff233db85a9defa1a8fd340b45.png"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/06a4f8fbfbbc456ec5152c8dcf78d574.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/56ad73ff233db85a9defa1a8fd340b45.png"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/06a4f8fbfbbc456ec5152c8dcf78d574.jpg"
             }
           ],
-          "mbid": "0be2cd7f-095d-3a0f-b957-73ce5188c8f3",
+          "mbid": "ac28b648-29df-4c8d-ba31-a26f12b73b89",
           "album": {
-            "mbid": "",
-            "#text": "Quique (Redux Edition)"
+            "mbid": "1feaf24a-5b67-471a-abea-ab5caafcde98",
+            "#text": "La Bomba"
           },
-          "name": "Polyfusion",
-          "url": "https://www.last.fm/music/Seefeel/_/Polyfusion",
+          "name": "La Bomba",
+          "url": "https://www.last.fm/music/Lord+of+the+Lost/_/La+Bomba",
           "date": {
-            "uts": "1784806691",
-            "#text": "23 Jul 2026, 11:38"
+            "uts": "1784909633",
+            "#text": "24 Jul 2026, 16:13"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "134122",
+        "totalPages": "134160",
         "page": "1",
         "perPage": "1",
-        "total": "134122"
+        "total": "134160"
       }
     }
   }

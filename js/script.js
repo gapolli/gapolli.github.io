@@ -180,11 +180,11 @@ function renderCards() {
 
         card.innerHTML = `
             <div>
-                <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="flex items-start justify-between gap-2 mb-3">
                     <h3 class="text-base font-bold text-blue-400 hover:text-blue-300 transition-colors">
                         <a href="${safeUrl}" target="_blank" rel="noopener noreferrer">${safeName}</a>
                     </h3>
-                    <div class="flex items-center gap-1.5">
+                    <div class="flex items-center gap-1.5 flex-wrap justify-end">
                         <!-- Star -->
                         <a href="${safeUrl}" target="_blank" rel="noopener noreferrer"
                            class="flex items-center gap-1 text-xs text-yellow-500 hover:text-yellow-400 transition-colors group"
@@ -214,6 +214,19 @@ function renderCards() {
                             </svg>
                             <span>Clone</span>
                         </button>
+
+                        <!-- Demo Button (appears only if has_pages is true) -->
+                        ${
+                            repo.has_pages
+                                ? `<a href="https://gapolli.github.io/${repo.name}/" target="_blank" rel="noopener noreferrer"
+                                       class="flex items-center gap-1 text-xs text-orange-400 hover:text-orange-300 transition-colors group"
+                                       title="View live demo">
+                                       <svg class="w-3 h-3 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                                           <path d="M8.293 1.5a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L13.586 8 4.293 2.707a1 1 0 010-1.414L8.293 1.5zM3 10v5a1 1 0 001 1h8a1 1 0 001-1v-5h-2v5H5v-5H3z"/>
+                                       </svg>
+                                   </a>`
+                                : ''
+                        }
                     </div>
                 </div>
                 <p class="text-gray-300 text-xs leading-relaxed line-clamp-4 mb-4">
@@ -224,14 +237,6 @@ function renderCards() {
                 <div class="flex flex-wrap gap-1.5 mb-4">
                     ${tagsHTML}
                 </div>
-                ${
-                    repo.has_pages
-                        ? `<a href="https://gapolli.github.io/${repo.name}/" target="_blank" rel="noopener noreferrer"
-                               class="inline-block mb-4 text-xs font-mono text-blue-400 hover:text-blue-300 transition-colors border border-blue-800 hover:border-blue-600 rounded px-3 py-1.5">
-                               🚀 View Demo
-                           </a>`
-                        : ''
-                }
                 <div class="text-[10px] text-gray-400 font-mono flex justify-between items-center pt-2 border-t border-gray-700">
                     <span>Engine: <strong class="text-white">${safeLang}</strong></span>
                     <span>Refactored: ${new Date(repo.updated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
@@ -254,14 +259,12 @@ function openCloneModal(repoUrl, repoName) {
     }
 }
 
-// Função para fechar modal
 function closeCloneModal() {
     if (cloneModal) {
         cloneModal.classList.add('hidden');
     }
 }
 
-// Função para copiar URL de clone
 function copyCloneUrl() {
     const urlText = document.getElementById('clone-url').textContent;
     navigator.clipboard.writeText(urlText).then(() => {

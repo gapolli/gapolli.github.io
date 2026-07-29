@@ -29,10 +29,10 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 273,
-    "following": 802,
+    "followers": 272,
+    "following": 803,
     "created_at": "2015-07-09T23:33:51Z",
-    "updated_at": "2026-07-27T21:18:57Z"
+    "updated_at": "2026-07-28T20:40:50Z"
   },
   "repositories": [
     {
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-07-27T02:27:57Z",
-      "pushed_at": "2026-07-27T02:27:51Z",
+      "updated_at": "2026-07-28T02:03:02Z",
+      "pushed_at": "2026-07-28T02:02:58Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 996,
+      "size": 1016,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "10f0f380-0f7a-429f-b815-36f20afb71ca",
-            "#text": "Madness of the Night"
+            "mbid": "",
+            "#text": "The Mission"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/cb86ae2b3cf140a0c069f72e1c419b66.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/714570a5f6b64533c504b716d898f8df.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/cb86ae2b3cf140a0c069f72e1c419b66.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/714570a5f6b64533c504b716d898f8df.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/cb86ae2b3cf140a0c069f72e1c419b66.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/714570a5f6b64533c504b716d898f8df.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/cb86ae2b3cf140a0c069f72e1c419b66.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/714570a5f6b64533c504b716d898f8df.jpg"
             }
           ],
           "mbid": "",
           "album": {
-            "mbid": "3c3de5f5-799e-430e-89a8-109566cf153b",
-            "#text": "The Asgarda"
+            "mbid": "7bfd2eb6-2242-4811-980f-31e913ba1944",
+            "#text": "Sum And Substance"
           },
-          "name": "We Are Gothrockers and We Don't Care",
-          "url": "https://www.last.fm/music/Madness+of+the+Night/_/We+Are+Gothrockers+and+We+Don%27t+Care",
+          "name": "Butterfly On A Wheel",
+          "url": "https://www.last.fm/music/The+Mission/_/Butterfly+On+A+Wheel",
           "date": {
-            "uts": "1785015818",
-            "#text": "25 Jul 2026, 21:43"
+            "uts": "1785254757",
+            "#text": "28 Jul 2026, 16:05"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "134302",
+        "totalPages": "134354",
         "page": "1",
         "perPage": "1",
-        "total": "134302"
+        "total": "134354"
       }
     }
   }

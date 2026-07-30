@@ -32,7 +32,7 @@
     "followers": 272,
     "following": 803,
     "created_at": "2015-07-09T23:33:51Z",
-    "updated_at": "2026-07-28T20:40:50Z"
+    "updated_at": "2026-07-29T14:22:32Z"
   },
   "repositories": [
     {
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-07-28T02:03:02Z",
-      "pushed_at": "2026-07-28T02:02:58Z",
+      "updated_at": "2026-07-29T02:06:05Z",
+      "pushed_at": "2026-07-29T02:06:00Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1016,
+      "size": 1017,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "",
-            "#text": "The Mission"
+            "mbid": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+            "#text": "Depeche Mode"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/714570a5f6b64533c504b716d898f8df.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/0a3b990e7b81447f8dd919219eadba08.png"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/714570a5f6b64533c504b716d898f8df.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/0a3b990e7b81447f8dd919219eadba08.png"
             },
             {
               "size": "large",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/714570a5f6b64533c504b716d898f8df.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/0a3b990e7b81447f8dd919219eadba08.png"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/714570a5f6b64533c504b716d898f8df.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/0a3b990e7b81447f8dd919219eadba08.png"
             }
           ],
-          "mbid": "",
+          "mbid": "534c9390-35d6-4005-9f20-c014d887b3ae",
           "album": {
-            "mbid": "7bfd2eb6-2242-4811-980f-31e913ba1944",
-            "#text": "Sum And Substance"
+            "mbid": "",
+            "#text": "The Singles 86-98"
           },
-          "name": "Butterfly On A Wheel",
-          "url": "https://www.last.fm/music/The+Mission/_/Butterfly+On+A+Wheel",
+          "name": "Only When I Lose Myself",
+          "url": "https://www.last.fm/music/Depeche+Mode/_/Only+When+I+Lose+Myself",
           "date": {
-            "uts": "1785254757",
-            "#text": "28 Jul 2026, 16:05"
+            "uts": "1785340952",
+            "#text": "29 Jul 2026, 16:02"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "134354",
+        "totalPages": "134419",
         "page": "1",
         "perPage": "1",
-        "total": "134354"
+        "total": "134419"
       }
     }
   }

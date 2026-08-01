@@ -29,10 +29,10 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 275,
-    "following": 803,
+    "followers": 277,
+    "following": 806,
     "created_at": "2015-07-09T23:33:51Z",
-    "updated_at": "2026-07-29T14:22:32Z"
+    "updated_at": "2026-07-31T15:04:22Z"
   },
   "repositories": [
     {
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-07-30T01:55:14Z",
-      "pushed_at": "2026-07-30T01:55:11Z",
+      "updated_at": "2026-07-31T02:14:39Z",
+      "pushed_at": "2026-07-31T02:14:35Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1036,
+      "size": 1037,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
-            "#text": "Depeche Mode"
+            "mbid": "f1106b17-dcbb-45f6-b938-199ccfab50cc",
+            "#text": "New Order"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/0a3b990e7b81447f8dd919219eadba08.png"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/42b6e9443da3aaa73347a632a4bdb315.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/0a3b990e7b81447f8dd919219eadba08.png"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/42b6e9443da3aaa73347a632a4bdb315.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/0a3b990e7b81447f8dd919219eadba08.png"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/42b6e9443da3aaa73347a632a4bdb315.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/0a3b990e7b81447f8dd919219eadba08.png"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/42b6e9443da3aaa73347a632a4bdb315.jpg"
             }
           ],
-          "mbid": "534c9390-35d6-4005-9f20-c014d887b3ae",
+          "mbid": "1193f0ae-c63f-4b01-8871-4502e71bea0a",
           "album": {
-            "mbid": "",
-            "#text": "The Singles 86-98"
+            "mbid": "96fffc70-b101-4654-9027-727b94f0f75c",
+            "#text": "Power corruption and lies"
           },
-          "name": "Only When I Lose Myself",
-          "url": "https://www.last.fm/music/Depeche+Mode/_/Only+When+I+Lose+Myself",
+          "name": "Your Silent Face",
+          "url": "https://www.last.fm/music/New+Order/_/Your+Silent+Face",
           "date": {
-            "uts": "1785340952",
-            "#text": "29 Jul 2026, 16:02"
+            "uts": "1785513658",
+            "#text": "31 Jul 2026, 16:00"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "134419",
+        "totalPages": "134482",
         "page": "1",
         "perPage": "1",
-        "total": "134419"
+        "total": "134482"
       }
     }
   }

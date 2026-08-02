@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-07-31T02:14:39Z",
-      "pushed_at": "2026-07-31T02:14:35Z",
+      "updated_at": "2026-08-01T02:21:48Z",
+      "pushed_at": "2026-08-01T02:21:44Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1037,
+      "size": 1057,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "f1106b17-dcbb-45f6-b938-199ccfab50cc",
-            "#text": "New Order"
+            "mbid": "ba0d6274-db14-4ef5-b28d-657ebde1a396",
+            "#text": "The Smashing Pumpkins"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/42b6e9443da3aaa73347a632a4bdb315.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/afff7726dc5bb933666bd9cb0698d8da.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/42b6e9443da3aaa73347a632a4bdb315.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/afff7726dc5bb933666bd9cb0698d8da.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/42b6e9443da3aaa73347a632a4bdb315.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/afff7726dc5bb933666bd9cb0698d8da.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/42b6e9443da3aaa73347a632a4bdb315.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/afff7726dc5bb933666bd9cb0698d8da.jpg"
             }
           ],
-          "mbid": "1193f0ae-c63f-4b01-8871-4502e71bea0a",
+          "mbid": "768b112b-0522-40fa-871d-f90c0dc97485",
           "album": {
-            "mbid": "96fffc70-b101-4654-9027-727b94f0f75c",
-            "#text": "Power corruption and lies"
+            "mbid": "",
+            "#text": "Mellon Collie and the Infinite Sadness (Remastered)"
           },
-          "name": "Your Silent Face",
-          "url": "https://www.last.fm/music/New+Order/_/Your+Silent+Face",
+          "name": "Here Is No Why",
+          "url": "https://www.last.fm/music/The+Smashing+Pumpkins/_/Here+Is+No+Why",
           "date": {
-            "uts": "1785513658",
-            "#text": "31 Jul 2026, 16:00"
+            "uts": "1785617764",
+            "#text": "01 Aug 2026, 20:56"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "134482",
+        "totalPages": "134626",
         "page": "1",
         "perPage": "1",
-        "total": "134482"
+        "total": "134626"
       }
     }
   }

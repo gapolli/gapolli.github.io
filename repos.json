@@ -30,7 +30,7 @@
     "public_repos": 32,
     "public_gists": 0,
     "followers": 279,
-    "following": 812,
+    "following": 813,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-08-03T11:09:18Z"
   },
@@ -103,8 +103,8 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-08-03T02:21:14Z",
-      "pushed_at": "2026-08-03T02:21:10Z",
+      "updated_at": "2026-08-04T02:01:43Z",
+      "pushed_at": "2026-08-04T02:01:18Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "91193ab6-1835-424e-848b-702a3f96d724",
-            "#text": "Zetra"
+            "mbid": "5cbef01b-cc35-4f52-af7b-d0df0c4f61b9",
+            "#text": "Sonic Youth"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/e90b56dffb8ff8fdd5149bdb6aeb553e.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/fcd153a028df4d6c21330410b6c5f01f.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/e90b56dffb8ff8fdd5149bdb6aeb553e.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/fcd153a028df4d6c21330410b6c5f01f.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/e90b56dffb8ff8fdd5149bdb6aeb553e.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/fcd153a028df4d6c21330410b6c5f01f.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/e90b56dffb8ff8fdd5149bdb6aeb553e.jpg"
+              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/fcd153a028df4d6c21330410b6c5f01f.jpg"
             }
           ],
-          "mbid": "",
+          "mbid": "61e8a6c1-4802-4ab6-af61-3940fb83b2ea",
           "album": {
             "mbid": "",
-            "#text": "From Without"
+            "#text": "Daydream Nation (Remastered Original Album)"
           },
-          "name": "The Raven's Game",
-          "url": "https://www.last.fm/music/Zetra/_/The+Raven%27s+Game",
+          "name": "A) the Wonder (Album Version)",
+          "url": "https://www.last.fm/music/Sonic+Youth/_/A)+the+Wonder+(Album+Version)",
           "date": {
-            "uts": "1785773488",
-            "#text": "03 Aug 2026, 16:11"
+            "uts": "1785859216",
+            "#text": "04 Aug 2026, 16:00"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "134728",
+        "totalPages": "134793",
         "page": "1",
         "perPage": "1",
-        "total": "134728"
+        "total": "134793"
       }
     }
   }

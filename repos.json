@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-08-05T02:00:38Z",
-      "pushed_at": "2026-08-05T02:00:27Z",
+      "updated_at": "2026-08-06T02:04:44Z",
+      "pushed_at": "2026-08-06T02:04:38Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1097,
+      "size": 1098,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3904,19 +3904,19 @@
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/34s/f3e44159dbdc4e56ab36bda3d95d829b.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/f3e44159dbdc4e56ab36bda3d95d829b.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/64s/f3e44159dbdc4e56ab36bda3d95d829b.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/f3e44159dbdc4e56ab36bda3d95d829b.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/174s/f3e44159dbdc4e56ab36bda3d95d829b.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/f3e44159dbdc4e56ab36bda3d95d829b.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/f3e44159dbdc4e56ab36bda3d95d829b.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f3e44159dbdc4e56ab36bda3d95d829b.jpg"
             }
           ],
           "mbid": "017c26b7-9455-329e-acdc-663a34f1eb22",

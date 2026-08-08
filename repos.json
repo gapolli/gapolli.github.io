@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 281,
+    "followers": 282,
     "following": 815,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-08-03T11:09:18Z"
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-08-06T02:04:44Z",
-      "pushed_at": "2026-08-06T02:04:38Z",
+      "updated_at": "2026-08-07T02:24:35Z",
+      "pushed_at": "2026-08-07T02:24:25Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1098,
+      "size": 1117,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "102952f1-2762-4b83-9153-0f0007cf2dd7",
-            "#text": "Reaper"
+            "mbid": "553d8166-27b0-49fe-b8e4-89a984e2c375",
+            "#text": "The Sisters of Mercy"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/f3e44159dbdc4e56ab36bda3d95d829b.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/eec9377491aa1b532c385405d5c6e3f5.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/f3e44159dbdc4e56ab36bda3d95d829b.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/eec9377491aa1b532c385405d5c6e3f5.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/f3e44159dbdc4e56ab36bda3d95d829b.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/eec9377491aa1b532c385405d5c6e3f5.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f3e44159dbdc4e56ab36bda3d95d829b.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/eec9377491aa1b532c385405d5c6e3f5.jpg"
             }
           ],
-          "mbid": "017c26b7-9455-329e-acdc-663a34f1eb22",
+          "mbid": "c7f3a76e-a651-4c25-9f98-f198f51bb06e",
           "album": {
-            "mbid": "491f0e7c-c556-30b4-ab74-ff642ab4048b",
-            "#text": "The Devil Is Female"
+            "mbid": "",
+            "#text": "David 'Kid' Jensen Session: 1983 (Live)"
           },
-          "name": "She Is a Devil and a Whore",
-          "url": "https://www.last.fm/music/Reaper/_/She+Is+a+Devil+and+a+Whore",
+          "name": "Jolene",
+          "url": "https://www.last.fm/music/The+Sisters+of+Mercy/_/Jolene",
           "date": {
-            "uts": "1785945844",
-            "#text": "05 Aug 2026, 16:04"
+            "uts": "1786120897",
+            "#text": "07 Aug 2026, 16:41"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "134848",
+        "totalPages": "134912",
         "page": "1",
         "perPage": "1",
-        "total": "134848"
+        "total": "134912"
       }
     }
   }

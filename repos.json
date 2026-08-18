@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 294,
+    "followers": 291,
     "following": 812,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-08-03T11:09:18Z"
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-08-16T00:58:41Z",
-      "pushed_at": "2026-08-16T00:58:37Z",
+      "updated_at": "2026-08-17T00:56:50Z",
+      "pushed_at": "2026-08-17T00:56:46Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1199,
+      "size": 1219,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "bf629fc0-2d07-4fa3-90dd-1e77629be935",
-            "#text": "Twin Tribes"
+            "mbid": "9d1ebcfe-4c15-4d18-95d3-d919898638a1",
+            "#text": "Lou Reed"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/f8bf6bf6c3a84d4b71f052aa367dc7be.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/b1f4d469322cf008967fe79ef3f48e35.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/f8bf6bf6c3a84d4b71f052aa367dc7be.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/b1f4d469322cf008967fe79ef3f48e35.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/f8bf6bf6c3a84d4b71f052aa367dc7be.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/b1f4d469322cf008967fe79ef3f48e35.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f8bf6bf6c3a84d4b71f052aa367dc7be.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b1f4d469322cf008967fe79ef3f48e35.jpg"
             }
           ],
-          "mbid": "",
+          "mbid": "47a6038e-5767-4662-b0a1-5ead4b8d9283",
           "album": {
-            "mbid": "",
-            "#text": "Shadows (Matte Blvck remix)"
+            "mbid": "051c3b71-da20-4724-8e3d-805dae6e7ce5",
+            "#text": "New York"
           },
-          "name": "Shadows (Matte Blvck Remix) (Matte Blvck Remix)",
-          "url": "https://www.last.fm/music/Twin+Tribes/_/Shadows+(Matte+Blvck+Remix)+(Matte+Blvck+Remix)",
+          "name": "Last Great American Whale",
+          "url": "https://www.last.fm/music/Lou+Reed/_/Last+Great+American+Whale",
           "date": {
-            "uts": "1786902404",
-            "#text": "16 Aug 2026, 17:46"
+            "uts": "1787000309",
+            "#text": "17 Aug 2026, 20:58"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "135243",
+        "totalPages": "135317",
         "page": "1",
         "perPage": "1",
-        "total": "135243"
+        "total": "135317"
       }
     }
   }

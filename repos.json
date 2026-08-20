@@ -29,8 +29,8 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 292,
-    "following": 812,
+    "followers": 293,
+    "following": 811,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-08-03T11:09:18Z"
   },
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-08-18T00:54:58Z",
-      "pushed_at": "2026-08-18T00:54:53Z",
+      "updated_at": "2026-08-19T00:56:19Z",
+      "pushed_at": "2026-08-19T00:56:13Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1220,
+      "size": 1239,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "cbcd4d49-e892-4fc6-a313-35f275a153d2",
-            "#text": "The Birthday Party"
+            "mbid": "d5cb6d2f-1f6c-4c93-ac90-86ced0f9c871",
+            "#text": "Sally Dige"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/ea2d03efd0074dae9bf924ae0f2b8143.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/ea2d03efd0074dae9bf924ae0f2b8143.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/ea2d03efd0074dae9bf924ae0f2b8143.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ea2d03efd0074dae9bf924ae0f2b8143.jpg"
             }
           ],
-          "mbid": "0eabb720-fe94-440a-8ff9-68cce99ce630",
+          "mbid": "a99135ed-6517-46f1-b210-edc734b34a0e",
           "album": {
-            "mbid": "",
-            "#text": "Mute: Audio Documents"
+            "mbid": "9e4185e7-cf18-4f12-acd4-6cc7c83aea76",
+            "#text": "Forget Me / Losing You"
           },
-          "name": "Jennifer's Veil",
-          "url": "https://www.last.fm/music/The+Birthday+Party/_/Jennifer%27s+Veil",
+          "name": "Forget Me",
+          "url": "https://www.last.fm/music/Sally+Dige/_/Forget+Me",
           "date": {
-            "uts": "1787081782",
-            "#text": "18 Aug 2026, 19:36"
+            "uts": "1787168956",
+            "#text": "19 Aug 2026, 19:49"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "135378",
+        "totalPages": "135478",
         "page": "1",
         "perPage": "1",
-        "total": "135378"
+        "total": "135478"
       }
     }
   }

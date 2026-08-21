@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 293,
+    "followers": 283,
     "following": 811,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-08-03T11:09:18Z"
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-08-19T00:56:19Z",
-      "pushed_at": "2026-08-19T00:56:13Z",
+      "updated_at": "2026-08-20T00:55:30Z",
+      "pushed_at": "2026-08-20T00:55:18Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1239,
+      "size": 1240,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "d5cb6d2f-1f6c-4c93-ac90-86ced0f9c871",
-            "#text": "Sally Dige"
+            "mbid": "5441c29d-3602-4898-b1a1-b77fa23b8e50",
+            "#text": "David Bowie"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/ea2d03efd0074dae9bf924ae0f2b8143.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/ddbef24ddf79302be4c79d6cdc9f77e1.png"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/ea2d03efd0074dae9bf924ae0f2b8143.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/ddbef24ddf79302be4c79d6cdc9f77e1.png"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/ea2d03efd0074dae9bf924ae0f2b8143.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/ddbef24ddf79302be4c79d6cdc9f77e1.png"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ea2d03efd0074dae9bf924ae0f2b8143.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ddbef24ddf79302be4c79d6cdc9f77e1.png"
             }
           ],
-          "mbid": "a99135ed-6517-46f1-b210-edc734b34a0e",
+          "mbid": "6aa1df08-f31a-419c-abe8-7623ef8cb678",
           "album": {
-            "mbid": "9e4185e7-cf18-4f12-acd4-6cc7c83aea76",
-            "#text": "Forget Me / Losing You"
+            "mbid": "0603828a-4dfe-4608-8193-4e3a94b8baf0",
+            "#text": "Best of Bowie"
           },
-          "name": "Forget Me",
-          "url": "https://www.last.fm/music/Sally+Dige/_/Forget+Me",
+          "name": "Fashion",
+          "url": "https://www.last.fm/music/David+Bowie/_/Fashion",
           "date": {
-            "uts": "1787168956",
-            "#text": "19 Aug 2026, 19:49"
+            "uts": "1787242556",
+            "#text": "20 Aug 2026, 16:15"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "135478",
+        "totalPages": "135536",
         "page": "1",
         "perPage": "1",
-        "total": "135478"
+        "total": "135536"
       }
     }
   }

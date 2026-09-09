@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 287,
+    "followers": 286,
     "following": 811,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-08-03T11:09:18Z"
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-09-07T02:28:51Z",
-      "pushed_at": "2026-09-07T02:28:48Z",
+      "updated_at": "2026-09-08T02:42:01Z",
+      "pushed_at": "2026-09-08T02:41:40Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1423,
+      "size": 1442,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "de433c93-be8f-43c3-973a-73dbacd18442",
-            "#text": "Pain Magazine"
+            "mbid": "",
+            "#text": "Real Life"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/7ab4dc45aff42cc61e09652768f376ae.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/baefca982f9e4dbe9582d01b80f7ae99.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/7ab4dc45aff42cc61e09652768f376ae.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/baefca982f9e4dbe9582d01b80f7ae99.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/7ab4dc45aff42cc61e09652768f376ae.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/baefca982f9e4dbe9582d01b80f7ae99.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/7ab4dc45aff42cc61e09652768f376ae.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/baefca982f9e4dbe9582d01b80f7ae99.jpg"
             }
           ],
-          "mbid": "d6aeac0e-ae5a-49a0-9ada-d4ba294cc7dc",
+          "mbid": "90b85cf7-c825-49b9-9bae-0501f1627d05",
           "album": {
             "mbid": "",
-            "#text": "Weak and Predatory"
+            "#text": "Send Me An Angel - '80s Synth Essentials"
           },
-          "name": "Weak And Predatory",
-          "url": "https://www.last.fm/music/Pain+Magazine/_/Weak+And+Predatory",
+          "name": "Sweet Dreams (Are Made Of This)",
+          "url": "https://www.last.fm/music/Real+Life/_/Sweet+Dreams+(Are+Made+Of+This)",
           "date": {
-            "uts": "1787333068",
-            "#text": "21 Aug 2026, 17:24"
+            "uts": "1788898185",
+            "#text": "08 Sep 2026, 20:09"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "135609",
+        "totalPages": "135692",
         "page": "1",
         "perPage": "1",
-        "total": "135609"
+        "total": "135692"
       }
     }
   }

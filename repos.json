@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-09-11T02:37:05Z",
-      "pushed_at": "2026-09-11T02:37:01Z",
+      "updated_at": "2026-09-12T02:46:34Z",
+      "pushed_at": "2026-09-12T02:46:31Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1463,
+      "size": 1483,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "000fc734-b7e1-4a01-92d1-f544261b43f5",
-            "#text": "Cocteau Twins"
+            "mbid": "",
+            "#text": "The B-52's"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/b76833d04383d440b3e5080e165245be.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/834e926a004c99f5a2a432ffb55b2141.png"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/b76833d04383d440b3e5080e165245be.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/834e926a004c99f5a2a432ffb55b2141.png"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/b76833d04383d440b3e5080e165245be.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/834e926a004c99f5a2a432ffb55b2141.png"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/b76833d04383d440b3e5080e165245be.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/834e926a004c99f5a2a432ffb55b2141.png"
             }
           ],
-          "mbid": "0bc4d8ea-4c2e-407c-baa4-f83e2a694eb5",
+          "mbid": "",
           "album": {
-            "mbid": "14ec0698-18fa-3395-b203-b5c3c8c2cc51",
-            "#text": "Treasure"
+            "mbid": "099b97e4-0a54-4bf3-8a0d-91a4cea8f635",
+            "#text": "Cosmic Thing"
           },
-          "name": "Lorelei",
-          "url": "https://www.last.fm/music/Cocteau+Twins/_/Lorelei",
+          "name": "Topaz",
+          "url": "https://www.last.fm/music/The+B-52%27s/_/Topaz",
           "date": {
-            "uts": "1789142476",
-            "#text": "11 Sep 2026, 16:01"
+            "uts": "1789243660",
+            "#text": "12 Sep 2026, 20:07"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "135971",
+        "totalPages": "136032",
         "page": "1",
         "perPage": "1",
-        "total": "135971"
+        "total": "136032"
       }
     }
   }

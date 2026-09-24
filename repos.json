@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 285,
+    "followers": 286,
     "following": 811,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-08-03T11:09:18Z"
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-09-22T02:57:08Z",
-      "pushed_at": "2026-09-22T02:57:04Z",
+      "updated_at": "2026-09-23T02:57:23Z",
+      "pushed_at": "2026-09-23T02:57:19Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1057,
+      "size": 1058,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "e675295a-1efe-4247-aa3b-53b78d0cdffc",
-            "#text": "Mudhoney"
+            "mbid": "5b32946a-4c08-4a75-b1b1-60700470671f",
+            "#text": "Death in Vegas"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/42dfa23d70279e9232a82888300a9400.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/81bc0c6d54694c9ecc113f9a7595f8cd.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/42dfa23d70279e9232a82888300a9400.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/81bc0c6d54694c9ecc113f9a7595f8cd.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/42dfa23d70279e9232a82888300a9400.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/81bc0c6d54694c9ecc113f9a7595f8cd.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/42dfa23d70279e9232a82888300a9400.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/81bc0c6d54694c9ecc113f9a7595f8cd.jpg"
             }
           ],
-          "mbid": "0a7cc2dc-56c3-3f50-b440-3a3dfcfdc25e",
+          "mbid": "0bf4474b-eecd-3b90-98ba-2800cf053632",
           "album": {
-            "mbid": "25c1b0ab-8d4f-4302-8c79-425ac0d368b3",
-            "#text": "Superfuzz Bigmuff (Deluxe Edition)"
+            "mbid": "2a7f860e-26b9-4abe-b9e7-41ecc59ac201",
+            "#text": "The Contino Sessions"
           },
-          "name": "In 'N' Out Of Grace",
-          "url": "https://www.last.fm/music/Mudhoney/_/In+%27N%27+Out+Of+Grace",
+          "name": "Aladdin's Story",
+          "url": "https://www.last.fm/music/Death+in+Vegas/_/Aladdin%27s+Story",
           "date": {
-            "uts": "1790093077",
-            "#text": "22 Sep 2026, 16:04"
+            "uts": "1790179475",
+            "#text": "23 Sep 2026, 16:04"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "136349",
+        "totalPages": "136428",
         "page": "1",
         "perPage": "1",
-        "total": "136349"
+        "total": "136428"
       }
     }
   }

@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 290,
+    "followers": 293,
     "following": 811,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-08-03T11:09:18Z"
@@ -103,8 +103,8 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-09-24T02:47:49Z",
-      "pushed_at": "2026-09-24T02:47:45Z",
+      "updated_at": "2026-09-25T03:04:19Z",
+      "pushed_at": "2026-09-25T03:04:15Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "5b32946a-4c08-4a75-b1b1-60700470671f",
-            "#text": "Death in Vegas"
+            "mbid": "edf3d7a0-6de2-4a6d-aa17-9fc842f0f430",
+            "#text": "Agent Side Grinder"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/81bc0c6d54694c9ecc113f9a7595f8cd.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/40d1d1d2162e42e61fda6e951936b958.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/81bc0c6d54694c9ecc113f9a7595f8cd.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/40d1d1d2162e42e61fda6e951936b958.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/81bc0c6d54694c9ecc113f9a7595f8cd.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/40d1d1d2162e42e61fda6e951936b958.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/81bc0c6d54694c9ecc113f9a7595f8cd.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/40d1d1d2162e42e61fda6e951936b958.jpg"
             }
           ],
-          "mbid": "0bf4474b-eecd-3b90-98ba-2800cf053632",
+          "mbid": "6ebe3b68-9adf-4aa3-818a-97d1f808cfb8",
           "album": {
-            "mbid": "2a7f860e-26b9-4abe-b9e7-41ecc59ac201",
-            "#text": "The Contino Sessions"
+            "mbid": "ea30190a-1f41-4f2c-a591-52ba5b7066e8",
+            "#text": "Alkimia"
           },
-          "name": "Aladdin's Story",
-          "url": "https://www.last.fm/music/Death+in+Vegas/_/Aladdin%27s+Story",
+          "name": "This Is Us",
+          "url": "https://www.last.fm/music/Agent+Side+Grinder/_/This+Is+Us",
           "date": {
-            "uts": "1790179475",
-            "#text": "23 Sep 2026, 16:04"
+            "uts": "1790352113",
+            "#text": "25 Sep 2026, 16:01"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "136428",
+        "totalPages": "136452",
         "page": "1",
         "perPage": "1",
-        "total": "136428"
+        "total": "136452"
       }
     }
   }

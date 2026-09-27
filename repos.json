@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-09-25T03:04:19Z",
-      "pushed_at": "2026-09-25T03:04:15Z",
+      "updated_at": "2026-09-26T03:08:10Z",
+      "pushed_at": "2026-09-26T03:08:06Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1078,
+      "size": 1098,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "edf3d7a0-6de2-4a6d-aa17-9fc842f0f430",
-            "#text": "Agent Side Grinder"
+            "mbid": "11bcbbf4-1252-496a-b747-06942f3d76db",
+            "#text": "Molchat Doma"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/40d1d1d2162e42e61fda6e951936b958.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/52de9d3ab8d84b2dd9d1b133671155e7.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/40d1d1d2162e42e61fda6e951936b958.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/52de9d3ab8d84b2dd9d1b133671155e7.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/40d1d1d2162e42e61fda6e951936b958.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/52de9d3ab8d84b2dd9d1b133671155e7.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/40d1d1d2162e42e61fda6e951936b958.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/52de9d3ab8d84b2dd9d1b133671155e7.jpg"
             }
           ],
-          "mbid": "6ebe3b68-9adf-4aa3-818a-97d1f808cfb8",
+          "mbid": "",
           "album": {
-            "mbid": "ea30190a-1f41-4f2c-a591-52ba5b7066e8",
-            "#text": "Alkimia"
+            "mbid": "7fb2c986-8007-4485-88db-954a9fb7aa6c",
+            "#text": "Небеса и Ад (Heaven and Hell)"
           },
-          "name": "This Is Us",
-          "url": "https://www.last.fm/music/Agent+Side+Grinder/_/This+Is+Us",
+          "name": "Небеса и Ад (Heaven and Hell)",
+          "url": "https://www.last.fm/music/Molchat+Doma/_/%D0%9D%D0%B5%D0%B1%D0%B5%D1%81%D0%B0+%D0%B8+%D0%90%D0%B4+(Heaven+and+Hell)",
           "date": {
-            "uts": "1790352113",
-            "#text": "25 Sep 2026, 16:01"
+            "uts": "1790454535",
+            "#text": "26 Sep 2026, 20:28"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "136452",
+        "totalPages": "136525",
         "page": "1",
         "perPage": "1",
-        "total": "136452"
+        "total": "136525"
       }
     }
   }

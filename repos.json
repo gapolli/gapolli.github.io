@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 292,
+    "followers": 294,
     "following": 811,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-08-03T11:09:18Z"
@@ -103,8 +103,8 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-09-28T03:11:34Z",
-      "pushed_at": "2026-09-28T03:11:30Z",
+      "updated_at": "2026-09-29T03:49:36Z",
+      "pushed_at": "2026-09-29T03:49:32Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "11bcbbf4-1252-496a-b747-06942f3d76db",
-            "#text": "Molchat Doma"
+            "mbid": "33eb6a1e-f76f-47df-a12a-bbd7c7316ac5",
+            "#text": "Vomito Negro"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/52de9d3ab8d84b2dd9d1b133671155e7.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/4984f8bc95bc4017c0156f2581edec8d.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/52de9d3ab8d84b2dd9d1b133671155e7.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/4984f8bc95bc4017c0156f2581edec8d.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/52de9d3ab8d84b2dd9d1b133671155e7.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/4984f8bc95bc4017c0156f2581edec8d.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/52de9d3ab8d84b2dd9d1b133671155e7.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/4984f8bc95bc4017c0156f2581edec8d.jpg"
             }
           ],
-          "mbid": "",
+          "mbid": "3c936998-0fe4-4ed7-b0e5-21d55cae9741",
           "album": {
-            "mbid": "7fb2c986-8007-4485-88db-954a9fb7aa6c",
-            "#text": "Небеса и Ад (Heaven and Hell)"
+            "mbid": "7e06b8b5-7222-49e4-8047-88fc1638f62b",
+            "#text": "Death Sun"
           },
-          "name": "Небеса и Ад (Heaven and Hell)",
-          "url": "https://www.last.fm/music/Molchat+Doma/_/%D0%9D%D0%B5%D0%B1%D0%B5%D1%81%D0%B0+%D0%B8+%D0%90%D0%B4+(Heaven+and+Hell)",
+          "name": "King of Thieves",
+          "url": "https://www.last.fm/music/Vomito+Negro/_/King+of+Thieves",
           "date": {
-            "uts": "1790454535",
-            "#text": "26 Sep 2026, 20:28"
+            "uts": "1790697867",
+            "#text": "29 Sep 2026, 16:04"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "136525",
+        "totalPages": "136552",
         "page": "1",
         "perPage": "1",
-        "total": "136525"
+        "total": "136552"
       }
     }
   }

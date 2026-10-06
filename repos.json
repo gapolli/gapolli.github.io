@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 292,
+    "followers": 291,
     "following": 810,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-08-03T11:09:18Z"
@@ -103,8 +103,8 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-10-04T03:54:53Z",
-      "pushed_at": "2026-10-04T03:54:50Z",
+      "updated_at": "2026-10-05T03:39:43Z",
+      "pushed_at": "2026-10-05T03:39:39Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "",
-            "#text": "Jorge Ben Jor"
+            "mbid": "8f92558c-2baa-4758-8c38-615519e9deda",
+            "#text": "The Clash"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/165db7f25bd7d78b995d9df51784ad43.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/c4e0027f2a1ffd13d51d9dd9de78a699.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/165db7f25bd7d78b995d9df51784ad43.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/c4e0027f2a1ffd13d51d9dd9de78a699.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/165db7f25bd7d78b995d9df51784ad43.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/c4e0027f2a1ffd13d51d9dd9de78a699.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/165db7f25bd7d78b995d9df51784ad43.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c4e0027f2a1ffd13d51d9dd9de78a699.jpg"
             }
           ],
-          "mbid": "",
+          "mbid": "1c49830b-c165-38b5-a26a-451189327553",
           "album": {
-            "mbid": "131358c1-ee92-41b6-9376-8adc1edc67ea",
-            "#text": "Bem-Vinda Amizade"
+            "mbid": "",
+            "#text": "Sandinista! (Remastered)"
           },
-          "name": "Curumim chama cunhatã que vou contar",
-          "url": "https://www.last.fm/music/+noredirect/Jorge+Ben+Jor/_/Curumim+chama+cunhat%C3%A3+que+vou+contar",
+          "name": "Charlie don't Surf",
+          "url": "https://www.last.fm/music/The+Clash/_/Charlie+don%27t+Surf",
           "date": {
-            "uts": "1790956918",
-            "#text": "02 Oct 2026, 16:01"
+            "uts": "1791216267",
+            "#text": "05 Oct 2026, 16:04"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "136620",
+        "totalPages": "136666",
         "page": "1",
         "perPage": "1",
-        "total": "136620"
+        "total": "136666"
       }
     }
   }

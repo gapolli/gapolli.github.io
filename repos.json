@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 291,
+    "followers": 292,
     "following": 810,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-08-03T11:09:18Z"
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-10-05T03:39:43Z",
-      "pushed_at": "2026-10-05T03:39:39Z",
+      "updated_at": "2026-10-06T04:27:49Z",
+      "pushed_at": "2026-10-06T04:27:46Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1180,
+      "size": 1201,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "8f92558c-2baa-4758-8c38-615519e9deda",
-            "#text": "The Clash"
+            "mbid": "5c51de66-d15e-48ed-9402-0f17ba2dfc52",
+            "#text": "The Chambers Brothers"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/c4e0027f2a1ffd13d51d9dd9de78a699.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/9d6491e80ad2492bb404cf6db00212c9.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/c4e0027f2a1ffd13d51d9dd9de78a699.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/9d6491e80ad2492bb404cf6db00212c9.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/c4e0027f2a1ffd13d51d9dd9de78a699.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/9d6491e80ad2492bb404cf6db00212c9.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/c4e0027f2a1ffd13d51d9dd9de78a699.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/9d6491e80ad2492bb404cf6db00212c9.jpg"
             }
           ],
-          "mbid": "1c49830b-c165-38b5-a26a-451189327553",
+          "mbid": "",
           "album": {
             "mbid": "",
-            "#text": "Sandinista! (Remastered)"
+            "#text": "The Chambers' Brothers Greatest Hits"
           },
-          "name": "Charlie don't Surf",
-          "url": "https://www.last.fm/music/The+Clash/_/Charlie+don%27t+Surf",
+          "name": "People Get Ready",
+          "url": "https://www.last.fm/music/The+Chambers+Brothers/_/People+Get+Ready",
           "date": {
-            "uts": "1791216267",
-            "#text": "05 Oct 2026, 16:04"
+            "uts": "1791302412",
+            "#text": "06 Oct 2026, 16:00"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "136666",
+        "totalPages": "136694",
         "page": "1",
         "perPage": "1",
-        "total": "136666"
+        "total": "136694"
       }
     }
   }

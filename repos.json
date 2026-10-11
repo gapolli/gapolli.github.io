@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-10-09T04:12:27Z",
-      "pushed_at": "2026-10-09T04:12:23Z",
+      "updated_at": "2026-10-10T03:57:38Z",
+      "pushed_at": "2026-10-10T03:57:34Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1221,
+      "size": 1242,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "8b399704-17f4-4001-943b-1d2b848940aa",
-            "#text": "Shocking Blue"
+            "mbid": "3787403d-7ed1-4149-8688-6ee8d4b0291e",
+            "#text": "This Cold Night"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/ef1d683e0338e78a50e6f50bbd356870.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/ef1d683e0338e78a50e6f50bbd356870.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/ef1d683e0338e78a50e6f50bbd356870.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ef1d683e0338e78a50e6f50bbd356870.jpg"
             }
           ],
-          "mbid": "eb0489c0-d553-4e54-a3f8-c4ec8250b87b",
+          "mbid": "09b1c41f-de23-4439-899b-03af2bc3a905",
           "album": {
-            "mbid": "",
-            "#text": "The Very Best Of Shocking Blue (Part Two - The B Sides)"
+            "mbid": "80e74433-42e9-49fd-975b-d302bdf71e06",
+            "#text": "So That I Can Endure:, Pt. 1"
           },
-          "name": "Roll Engine Roll",
-          "url": "https://www.last.fm/music/Shocking+Blue/_/Roll+Engine+Roll",
+          "name": "Circuits",
+          "url": "https://www.last.fm/music/This+Cold+Night/_/Circuits",
           "date": {
-            "uts": "1791561895",
-            "#text": "09 Oct 2026, 16:04"
+            "uts": "1791681306",
+            "#text": "11 Oct 2026, 01:15"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "136753",
+        "totalPages": "136869",
         "page": "1",
         "perPage": "1",
-        "total": "136753"
+        "total": "136869"
       }
     }
   }

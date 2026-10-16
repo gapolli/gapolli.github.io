@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 295,
+    "followers": 294,
     "following": 810,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-08-03T11:09:18Z"
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-10-14T03:12:52Z",
-      "pushed_at": "2026-10-14T03:12:49Z",
+      "updated_at": "2026-10-15T02:51:29Z",
+      "pushed_at": "2026-10-15T02:51:25Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1283,
+      "size": 1282,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "a7166c3d-68b0-4301-bbec-e93642b12b56",
-            "#text": "Anthony Hopkins"
+            "mbid": "14e86dea-3562-4b19-bb1a-f1e71ffb57e4",
+            "#text": "Corona"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/7ef7b4a56c7ce0cbaff307a7ef165d40.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/a0990be5c1ea3bd574d6f80ebd71e464.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/7ef7b4a56c7ce0cbaff307a7ef165d40.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/a0990be5c1ea3bd574d6f80ebd71e464.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/7ef7b4a56c7ce0cbaff307a7ef165d40.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/a0990be5c1ea3bd574d6f80ebd71e464.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/7ef7b4a56c7ce0cbaff307a7ef165d40.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/a0990be5c1ea3bd574d6f80ebd71e464.jpg"
             }
           ],
           "mbid": "",
           "album": {
-            "mbid": "",
-            "#text": "Hannibal - Original Motion Picture Soundtrack"
+            "mbid": "0fc72651-d79f-4dd4-91d2-7828c57ebdc9",
+            "#text": "The Rhythm of the Night"
           },
-          "name": "Vide Cor Meum",
-          "url": "https://www.last.fm/music/Anthony+Hopkins/_/Vide+Cor+Meum",
+          "name": "Baby Baby",
+          "url": "https://www.last.fm/music/Corona/_/Baby+Baby",
           "date": {
-            "uts": "1791997527",
-            "#text": "14 Oct 2026, 17:05"
+            "uts": "1792074782",
+            "#text": "15 Oct 2026, 14:33"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "137026",
+        "totalPages": "137056",
         "page": "1",
         "perPage": "1",
-        "total": "137026"
+        "total": "137056"
       }
     }
   }

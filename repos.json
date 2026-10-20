@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-10-18T02:41:44Z",
-      "pushed_at": "2026-10-18T02:41:41Z",
+      "updated_at": "2026-10-19T02:54:47Z",
+      "pushed_at": "2026-10-19T02:54:44Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1324,
+      "size": 1323,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "f1106b17-dcbb-45f6-b938-199ccfab50cc",
-            "#text": "New Order"
+            "mbid": "bc42b0f2-3237-486b-8b86-84a040c89f23",
+            "#text": "Flowers for Agatha"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/eb77368807457b448d2b4e92d33419e1.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/cc57338e3c395211906ed1f5fcb8d137.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/eb77368807457b448d2b4e92d33419e1.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/cc57338e3c395211906ed1f5fcb8d137.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/eb77368807457b448d2b4e92d33419e1.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/cc57338e3c395211906ed1f5fcb8d137.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/eb77368807457b448d2b4e92d33419e1.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/cc57338e3c395211906ed1f5fcb8d137.jpg"
             }
           ],
-          "mbid": "18708857-b219-4c02-bcf5-98792bb69167",
+          "mbid": "1e2b8e4b-eb47-45ca-9995-9f793a12c378",
           "album": {
-            "mbid": "3b67aabc-4748-498e-b5a0-da529631d2c9",
-            "#text": "Complete Music"
+            "mbid": "",
+            "#text": "Killed By Deathrock Vol. 2"
           },
-          "name": "Stray Dog",
-          "url": "https://www.last.fm/music/New+Order/_/Stray+Dog",
+          "name": "The Freedom Curse",
+          "url": "https://www.last.fm/music/Flowers+for+Agatha/_/The+Freedom+Curse",
           "date": {
-            "uts": "1792275005",
-            "#text": "17 Oct 2026, 22:10"
+            "uts": "1792421895",
+            "#text": "19 Oct 2026, 14:58"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "137163",
+        "totalPages": "137213",
         "page": "1",
         "perPage": "1",
-        "total": "137163"
+        "total": "137213"
       }
     }
   }

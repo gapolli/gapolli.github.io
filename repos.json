@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 296,
+    "followers": 295,
     "following": 817,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-10-17T20:52:13Z"
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-10-19T02:54:47Z",
-      "pushed_at": "2026-10-19T02:54:44Z",
+      "updated_at": "2026-10-20T03:04:52Z",
+      "pushed_at": "2026-10-20T03:04:49Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1323,
+      "size": 1344,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "bc42b0f2-3237-486b-8b86-84a040c89f23",
-            "#text": "Flowers for Agatha"
+            "mbid": "87c5dedd-371d-4a53-9f7f-80522fb7f3cb",
+            "#text": "Björk"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/cc57338e3c395211906ed1f5fcb8d137.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/f341c2cc4953679596c4db0e9daec391.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/cc57338e3c395211906ed1f5fcb8d137.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/f341c2cc4953679596c4db0e9daec391.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/cc57338e3c395211906ed1f5fcb8d137.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/f341c2cc4953679596c4db0e9daec391.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/cc57338e3c395211906ed1f5fcb8d137.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f341c2cc4953679596c4db0e9daec391.jpg"
             }
           ],
-          "mbid": "1e2b8e4b-eb47-45ca-9995-9f793a12c378",
+          "mbid": "39613b84-e144-4a2e-b34a-0f5ee29a5b0c",
           "album": {
             "mbid": "",
-            "#text": "Killed By Deathrock Vol. 2"
+            "#text": "Biophilia (Deluxe Edition)"
           },
-          "name": "The Freedom Curse",
-          "url": "https://www.last.fm/music/Flowers+for+Agatha/_/The+Freedom+Curse",
+          "name": "Dark Matter",
+          "url": "https://www.last.fm/music/Bj%C3%B6rk/_/Dark+Matter",
           "date": {
-            "uts": "1792421895",
-            "#text": "19 Oct 2026, 14:58"
+            "uts": "1792512195",
+            "#text": "20 Oct 2026, 16:03"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "137213",
+        "totalPages": "137280",
         "page": "1",
         "perPage": "1",
-        "total": "137213"
+        "total": "137280"
       }
     }
   }

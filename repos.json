@@ -29,10 +29,10 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 297,
-    "following": 817,
+    "followers": 299,
+    "following": 830,
     "created_at": "2015-07-09T23:33:51Z",
-    "updated_at": "2026-10-17T20:52:13Z"
+    "updated_at": "2026-10-24T21:17:53Z"
   },
   "repositories": [
     {
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-10-23T03:01:39Z",
-      "pushed_at": "2026-10-23T03:01:35Z",
+      "updated_at": "2026-10-24T02:58:31Z",
+      "pushed_at": "2026-10-24T02:58:28Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1364,
+      "size": 1386,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "",
-            "#text": "Martha Argerich"
+            "mbid": "9a58fda3-f4ed-4080-a3a5-f457aac9fcdd",
+            "#text": "Joy Division"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/f2aca38cd25e4f3e3327d643f9b9c0ad.png"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/f2aca38cd25e4f3e3327d643f9b9c0ad.png"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/f2aca38cd25e4f3e3327d643f9b9c0ad.png"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f2aca38cd25e4f3e3327d643f9b9c0ad.png"
             }
           ],
-          "mbid": "",
+          "mbid": "33542f80-e1c1-455b-bb69-5b2031053529",
           "album": {
-            "mbid": "",
-            "#text": "Kremer  Friends (ELO)"
+            "mbid": "0464389e-7c6a-43a7-88b0-e95aa88b899e",
+            "#text": "Love Will Tear Us Apart"
           },
-          "name": "Fantasiestücke, Op. 88 : Schumann: Fantasiestücke, Op. 88: II. Humoreske. Lebhaft",
-          "url": "https://www.last.fm/music/Martha+Argerich/_/Fantasiest%C3%BCcke,+Op.+88+:+Schumann:+Fantasiest%C3%BCcke,+Op.+88:+II.+Humoreske.+Lebhaft",
+          "name": "Leaders of Men (Martin Hannett Sessions)",
+          "url": "https://www.last.fm/music/Joy+Division/_/Leaders+of+Men+(Martin+Hannett+Sessions)",
           "date": {
-            "uts": "1792771066",
-            "#text": "23 Oct 2026, 15:57"
+            "uts": "1792873272",
+            "#text": "24 Oct 2026, 20:21"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "137348",
+        "totalPages": "137420",
         "page": "1",
         "perPage": "1",
-        "total": "137348"
+        "total": "137420"
       }
     }
   }

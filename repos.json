@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 300,
+    "followers": 298,
     "following": 830,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-10-24T21:17:53Z"
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-10-26T02:49:56Z",
-      "pushed_at": "2026-10-26T02:49:53Z",
+      "updated_at": "2026-10-27T03:23:43Z",
+      "pushed_at": "2026-10-27T03:23:39Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1406,
+      "size": 1405,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "9a58fda3-f4ed-4080-a3a5-f457aac9fcdd",
-            "#text": "Joy Division"
+            "mbid": "f1106b17-dcbb-45f6-b938-199ccfab50cc",
+            "#text": "New Order"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/f2aca38cd25e4f3e3327d643f9b9c0ad.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/6a84787a011aab92121e60a2473cf57c.png"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/f2aca38cd25e4f3e3327d643f9b9c0ad.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/6a84787a011aab92121e60a2473cf57c.png"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/f2aca38cd25e4f3e3327d643f9b9c0ad.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a84787a011aab92121e60a2473cf57c.png"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f2aca38cd25e4f3e3327d643f9b9c0ad.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a84787a011aab92121e60a2473cf57c.png"
             }
           ],
-          "mbid": "33542f80-e1c1-455b-bb69-5b2031053529",
+          "mbid": "06cd4798-8982-4442-814a-f29298609ed8",
           "album": {
-            "mbid": "0464389e-7c6a-43a7-88b0-e95aa88b899e",
-            "#text": "Love Will Tear Us Apart"
+            "mbid": "22565d51-c471-3387-931d-3518fd00e4a5",
+            "#text": "Waiting for the Sirens' Call"
           },
-          "name": "Leaders of Men (Martin Hannett Sessions)",
-          "url": "https://www.last.fm/music/Joy+Division/_/Leaders+of+Men+(Martin+Hannett+Sessions)",
+          "name": "Waiting for the Sirens' Call",
+          "url": "https://www.last.fm/music/New+Order/_/Waiting+for+the+Sirens%27+Call",
           "date": {
-            "uts": "1792873272",
-            "#text": "24 Oct 2026, 20:21"
+            "uts": "1793117014",
+            "#text": "27 Oct 2026, 16:03"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "137420",
+        "totalPages": "137497",
         "page": "1",
         "perPage": "1",
-        "total": "137420"
+        "total": "137497"
       }
     }
   }

@@ -29,10 +29,10 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 298,
-    "following": 830,
+    "followers": 297,
+    "following": 833,
     "created_at": "2015-07-09T23:33:51Z",
-    "updated_at": "2026-10-24T21:17:53Z"
+    "updated_at": "2026-10-28T14:12:11Z"
   },
   "repositories": [
     {
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-10-27T03:23:43Z",
-      "pushed_at": "2026-10-27T03:23:39Z",
+      "updated_at": "2026-10-28T03:39:47Z",
+      "pushed_at": "2026-10-28T03:39:43Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1405,
+      "size": 1427,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "f1106b17-dcbb-45f6-b938-199ccfab50cc",
-            "#text": "New Order"
+            "mbid": "1fc54353-dcd0-47b1-bb59-7bd2974df829",
+            "#text": "Clan of Xymox"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/6a84787a011aab92121e60a2473cf57c.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/0f97058915b52ba3dc81706d253256b6.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/6a84787a011aab92121e60a2473cf57c.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/0f97058915b52ba3dc81706d253256b6.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/6a84787a011aab92121e60a2473cf57c.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/0f97058915b52ba3dc81706d253256b6.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6a84787a011aab92121e60a2473cf57c.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0f97058915b52ba3dc81706d253256b6.jpg"
             }
           ],
-          "mbid": "06cd4798-8982-4442-814a-f29298609ed8",
+          "mbid": "0b3c0d70-c0da-419f-a5d9-a51ab0795530",
           "album": {
-            "mbid": "22565d51-c471-3387-931d-3518fd00e4a5",
-            "#text": "Waiting for the Sirens' Call"
+            "mbid": "",
+            "#text": "Spider On The Wall"
           },
-          "name": "Waiting for the Sirens' Call",
-          "url": "https://www.last.fm/music/New+Order/_/Waiting+for+the+Sirens%27+Call",
+          "name": "Into the Unknown",
+          "url": "https://www.last.fm/music/Clan+of+Xymox/_/Into+the+Unknown",
           "date": {
-            "uts": "1793117014",
-            "#text": "27 Oct 2026, 16:03"
+            "uts": "1793203828",
+            "#text": "28 Oct 2026, 16:10"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "137497",
+        "totalPages": "137575",
         "page": "1",
         "perPage": "1",
-        "total": "137497"
+        "total": "137575"
       }
     }
   }

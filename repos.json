@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 300,
+    "followers": 296,
     "following": 841,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-11-03T11:11:08Z"
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-11-03T04:59:35Z",
-      "pushed_at": "2026-11-03T04:59:32Z",
+      "updated_at": "2026-11-04T04:31:33Z",
+      "pushed_at": "2026-11-04T04:31:29Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1488,
+      "size": 1487,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "",
-            "#text": "Redlik"
+            "mbid": "8ca01f46-53ac-4af2-8516-55a909c0905e",
+            "#text": "my bloody valentine"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/a2c14606c176268e911e965d91a12059.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/35fce4402522447d9244db13cbbb292f.png"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/a2c14606c176268e911e965d91a12059.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/35fce4402522447d9244db13cbbb292f.png"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/a2c14606c176268e911e965d91a12059.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/35fce4402522447d9244db13cbbb292f.png"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/a2c14606c176268e911e965d91a12059.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/35fce4402522447d9244db13cbbb292f.png"
             }
           ],
-          "mbid": "",
+          "mbid": "7532d642-7665-4366-8276-570d68b38cf1",
           "album": {
-            "mbid": "",
-            "#text": "Lovesick"
+            "mbid": "0ca06d46-4d26-46c1-b12d-17d232e10ec8",
+            "#text": "m b v"
           },
-          "name": "Porque Te Vas",
-          "url": "https://www.last.fm/music/Redlik/_/Porque+Te+Vas",
+          "name": "new you",
+          "url": "https://www.last.fm/music/my+bloody+valentine/_/new+you",
           "date": {
-            "uts": "1793721887",
-            "#text": "03 Nov 2026, 16:04"
+            "uts": "1793798960",
+            "#text": "04 Nov 2026, 13:29"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "138207",
+        "totalPages": "138251",
         "page": "1",
         "perPage": "1",
-        "total": "138207"
+        "total": "138251"
       }
     }
   }

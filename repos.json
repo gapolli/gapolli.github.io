@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-11-04T04:31:33Z",
-      "pushed_at": "2026-11-04T04:31:29Z",
+      "updated_at": "2026-11-05T04:47:31Z",
+      "pushed_at": "2026-11-05T04:47:27Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1487,
+      "size": 1508,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "8ca01f46-53ac-4af2-8516-55a909c0905e",
-            "#text": "my bloody valentine"
+            "mbid": "",
+            "#text": "Os Pedrero"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/35fce4402522447d9244db13cbbb292f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/ab475eadf9a149fdae321e8172a6083a.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/35fce4402522447d9244db13cbbb292f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/ab475eadf9a149fdae321e8172a6083a.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/35fce4402522447d9244db13cbbb292f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/ab475eadf9a149fdae321e8172a6083a.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/35fce4402522447d9244db13cbbb292f.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ab475eadf9a149fdae321e8172a6083a.jpg"
             }
           ],
-          "mbid": "7532d642-7665-4366-8276-570d68b38cf1",
+          "mbid": "",
           "album": {
-            "mbid": "0ca06d46-4d26-46c1-b12d-17d232e10ec8",
-            "#text": "m b v"
+            "mbid": "48ea2471-9645-4624-8bfe-6c40a7750276",
+            "#text": "Hard Rock Dreams"
           },
-          "name": "new you",
-          "url": "https://www.last.fm/music/my+bloody+valentine/_/new+you",
+          "name": "Poxa!",
+          "url": "https://www.last.fm/music/Os+Pedrero/_/Poxa!",
           "date": {
-            "uts": "1793798960",
-            "#text": "04 Nov 2026, 13:29"
+            "uts": "1793931130",
+            "#text": "06 Nov 2026, 02:12"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "138251",
+        "totalPages": "138358",
         "page": "1",
         "perPage": "1",
-        "total": "138251"
+        "total": "138358"
       }
     }
   }

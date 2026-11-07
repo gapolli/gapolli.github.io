@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 296,
+    "followers": 297,
     "following": 841,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-11-03T11:11:08Z"
@@ -103,8 +103,8 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-11-05T04:47:31Z",
-      "pushed_at": "2026-11-05T04:47:27Z",
+      "updated_at": "2026-11-06T04:46:35Z",
+      "pushed_at": "2026-11-06T04:46:31Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "",
-            "#text": "Os Pedrero"
+            "mbid": "69ee3720-a7cb-4402-b48d-a02c366f2bcf",
+            "#text": "The Cure"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/ab475eadf9a149fdae321e8172a6083a.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/2282230d1c2f9d12abbef0b550042f90.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/ab475eadf9a149fdae321e8172a6083a.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/2282230d1c2f9d12abbef0b550042f90.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/ab475eadf9a149fdae321e8172a6083a.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/2282230d1c2f9d12abbef0b550042f90.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ab475eadf9a149fdae321e8172a6083a.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/2282230d1c2f9d12abbef0b550042f90.jpg"
             }
           ],
-          "mbid": "",
+          "mbid": "a4594bf7-97df-4c88-8755-02973cfcebdd",
           "album": {
-            "mbid": "48ea2471-9645-4624-8bfe-6c40a7750276",
-            "#text": "Hard Rock Dreams"
+            "mbid": "",
+            "#text": "Pornography (Deluxe Edition)"
           },
-          "name": "Poxa!",
-          "url": "https://www.last.fm/music/Os+Pedrero/_/Poxa!",
+          "name": "The Figurehead",
+          "url": "https://www.last.fm/music/The+Cure/_/The+Figurehead",
           "date": {
-            "uts": "1793931130",
-            "#text": "06 Nov 2026, 02:12"
+            "uts": "1793980923",
+            "#text": "06 Nov 2026, 16:02"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "138358",
+        "totalPages": "138412",
         "page": "1",
         "perPage": "1",
-        "total": "138358"
+        "total": "138412"
       }
     }
   }

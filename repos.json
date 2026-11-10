@@ -30,7 +30,7 @@
     "public_repos": 32,
     "public_gists": 0,
     "followers": 298,
-    "following": 841,
+    "following": 840,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-11-03T11:11:08Z"
   },
@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-11-08T03:58:19Z",
-      "pushed_at": "2026-11-08T03:58:16Z",
+      "updated_at": "2026-11-09T04:14:25Z",
+      "pushed_at": "2026-11-09T04:14:21Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1529,
+      "size": 1549,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "4e4511f6-4f1a-44b9-9ec1-33f0f11c0b39",
-            "#text": "Take Offense"
+            "mbid": "f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+            "#text": "Killing Joke"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/ff345748824d4558b2e956503fc8cd18.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/0bfc5264667e3ce37c1a5830fe734bf0.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/ff345748824d4558b2e956503fc8cd18.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/0bfc5264667e3ce37c1a5830fe734bf0.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/ff345748824d4558b2e956503fc8cd18.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/0bfc5264667e3ce37c1a5830fe734bf0.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ff345748824d4558b2e956503fc8cd18.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/0bfc5264667e3ce37c1a5830fe734bf0.jpg"
             }
           ],
-          "mbid": "e8ff57c4-8a8b-47ef-87f1-13e5716f911b",
+          "mbid": "06d6afb0-8475-4441-9557-a7ebbfd2dbf1",
           "album": {
-            "mbid": "c95b86f1-b9da-4df2-b652-8cd3d214e461",
-            "#text": "Tables Will Turn"
+            "mbid": "",
+            "#text": "In Dub - Rewind (Vol. 1)"
           },
-          "name": "No Tomorrow",
-          "url": "https://www.last.fm/music/Take+Offense/_/No+Tomorrow",
+          "name": "Money Is Not Our God",
+          "url": "https://www.last.fm/music/Killing+Joke/_/Money+Is+Not+Our+God",
           "date": {
-            "uts": "1794081367",
-            "#text": "07 Nov 2026, 19:56"
+            "uts": "1794240446",
+            "#text": "09 Nov 2026, 16:07"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "138547",
+        "totalPages": "138617",
         "page": "1",
         "perPage": "1",
-        "total": "138547"
+        "total": "138617"
       }
     }
   }

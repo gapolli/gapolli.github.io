@@ -103,14 +103,14 @@
       "releases_url": "https://api.github.com/repos/gapolli/gapolli.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
-      "updated_at": "2026-11-10T05:41:23Z",
-      "pushed_at": "2026-11-10T05:41:20Z",
+      "updated_at": "2026-11-11T05:18:04Z",
+      "pushed_at": "2026-11-11T04:18:01Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1549,
+      "size": 1570,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "f41490ce-fe39-435d-86c0-ab5ce098b423",
-            "#text": "Simple Minds"
+            "mbid": "1b96b9c9-0832-40cb-9f8d-7274de3733fc",
+            "#text": "New York Dolls"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/bc1719b5d6f34de574e9ff6993bdb601.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/f3f831f713b4d520c671a566d3c5c4f6.png"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/bc1719b5d6f34de574e9ff6993bdb601.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/f3f831f713b4d520c671a566d3c5c4f6.png"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/bc1719b5d6f34de574e9ff6993bdb601.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/f3f831f713b4d520c671a566d3c5c4f6.png"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/bc1719b5d6f34de574e9ff6993bdb601.png"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/f3f831f713b4d520c671a566d3c5c4f6.png"
             }
           ],
-          "mbid": "a055a6be-11d1-4dfa-81df-de47f91c2905",
+          "mbid": "4c0cdeda-2e57-4586-acd3-056b2d64e9ad",
           "album": {
-            "mbid": "1df9de32-cb7c-3e00-971d-af2d13cdda14",
-            "#text": "Empires And Dance"
+            "mbid": "07259559-743c-4f92-8eb3-205287ef1c90",
+            "#text": "New York Dolls"
           },
-          "name": "This Fear of Gods",
-          "url": "https://www.last.fm/music/Simple+Minds/_/This+Fear+of+Gods",
+          "name": "Jet Boy",
+          "url": "https://www.last.fm/music/New+York+Dolls/_/Jet+Boy",
           "date": {
-            "uts": "1794317627",
-            "#text": "10 Nov 2026, 13:33"
+            "uts": "1794403849",
+            "#text": "11 Nov 2026, 13:30"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "138657",
+        "totalPages": "138744",
         "page": "1",
         "perPage": "1",
-        "total": "138657"
+        "total": "138744"
       }
     }
   }

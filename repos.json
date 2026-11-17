@@ -230,7 +230,7 @@
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
       "updated_at": "2026-11-12T06:27:28Z",
-      "pushed_at": "2026-11-15T04:27:41Z",
+      "pushed_at": "2026-11-16T04:24:50Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "c06fa245-39c4-416d-8faa-6044353e9fae",
-            "#text": "NNHMN"
+            "mbid": "",
+            "#text": "Future Faces"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/10f07ccb0cd5b66abd4a5ac3648ba17a.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/22fcc3a3b19eaef74c60d03e484f289f.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/10f07ccb0cd5b66abd4a5ac3648ba17a.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/22fcc3a3b19eaef74c60d03e484f289f.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/10f07ccb0cd5b66abd4a5ac3648ba17a.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/22fcc3a3b19eaef74c60d03e484f289f.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/10f07ccb0cd5b66abd4a5ac3648ba17a.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/22fcc3a3b19eaef74c60d03e484f289f.jpg"
             }
           ],
-          "mbid": "f1c1c4bb-ec01-476c-9131-7ebef2318aab",
+          "mbid": "",
           "album": {
             "mbid": "",
-            "#text": "Opera of Lust  The Art of Sorrow, Pt. 1"
+            "#text": "I Kiedys Ja"
           },
-          "name": "The Secret",
-          "url": "https://www.last.fm/music/NNHMN/_/The+Secret",
+          "name": "I Kiedys Ja",
+          "url": "https://www.last.fm/music/Future+Faces/_/I+Kiedys+Ja",
           "date": {
-            "uts": "1794677638",
-            "#text": "14 Nov 2026, 17:33"
+            "uts": "1794845958",
+            "#text": "16 Nov 2026, 16:19"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "138854",
+        "totalPages": "138905",
         "page": "1",
         "perPage": "1",
-        "total": "138854"
+        "total": "138905"
       }
     }
   }

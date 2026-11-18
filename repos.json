@@ -230,13 +230,13 @@
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
       "updated_at": "2026-11-12T06:27:28Z",
-      "pushed_at": "2026-11-16T04:24:50Z",
+      "pushed_at": "2026-11-17T06:10:01Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
       "svn_url": "https://github.com/gapolli/gapolli.github.io",
       "homepage": null,
-      "size": 1060,
+      "size": 1080,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "",
-            "#text": "Future Faces"
+            "mbid": "ec84e56f-9fbe-40d3-9979-bc084359d79c",
+            "#text": "Selofan"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/22fcc3a3b19eaef74c60d03e484f289f.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/186f2fd5cb76722eb0b71a04fdc26e8f.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/22fcc3a3b19eaef74c60d03e484f289f.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/186f2fd5cb76722eb0b71a04fdc26e8f.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/22fcc3a3b19eaef74c60d03e484f289f.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/186f2fd5cb76722eb0b71a04fdc26e8f.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/22fcc3a3b19eaef74c60d03e484f289f.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/186f2fd5cb76722eb0b71a04fdc26e8f.jpg"
             }
           ],
           "mbid": "",
           "album": {
             "mbid": "",
-            "#text": "I Kiedys Ja"
+            "#text": "Sticky Fingers"
           },
-          "name": "I Kiedys Ja",
-          "url": "https://www.last.fm/music/Future+Faces/_/I+Kiedys+Ja",
+          "name": "Sticky Fingers",
+          "url": "https://www.last.fm/music/Selofan/_/Sticky+Fingers",
           "date": {
-            "uts": "1794845958",
-            "#text": "16 Nov 2026, 16:19"
+            "uts": "1794931846",
+            "#text": "17 Nov 2026, 16:10"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "138905",
+        "totalPages": "138973",
         "page": "1",
         "perPage": "1",
-        "total": "138905"
+        "total": "138973"
       }
     }
   }

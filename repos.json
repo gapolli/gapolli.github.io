@@ -29,7 +29,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 298,
+    "followers": 297,
     "following": 845,
     "created_at": "2015-07-09T23:33:51Z",
     "updated_at": "2026-11-13T13:11:11Z"
@@ -230,7 +230,7 @@
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
       "updated_at": "2026-11-12T06:27:28Z",
-      "pushed_at": "2026-11-17T06:10:01Z",
+      "pushed_at": "2026-11-18T05:38:18Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "ec84e56f-9fbe-40d3-9979-bc084359d79c",
-            "#text": "Selofan"
+            "mbid": "6b63d15d-10d1-45ff-a59d-966a5f093b6f",
+            "#text": "Years of Denial"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/186f2fd5cb76722eb0b71a04fdc26e8f.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/ff488a31b12623d205fa72ae4281fe2c.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/186f2fd5cb76722eb0b71a04fdc26e8f.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/ff488a31b12623d205fa72ae4281fe2c.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/186f2fd5cb76722eb0b71a04fdc26e8f.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/ff488a31b12623d205fa72ae4281fe2c.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/186f2fd5cb76722eb0b71a04fdc26e8f.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ff488a31b12623d205fa72ae4281fe2c.jpg"
             }
           ],
           "mbid": "",
           "album": {
             "mbid": "",
-            "#text": "Sticky Fingers"
+            "#text": "Dancing with Demons"
           },
-          "name": "Sticky Fingers",
-          "url": "https://www.last.fm/music/Selofan/_/Sticky+Fingers",
+          "name": "Dancing with Demons",
+          "url": "https://www.last.fm/music/Years+of+Denial/_/Dancing+with+Demons",
           "date": {
-            "uts": "1794931846",
-            "#text": "17 Nov 2026, 16:10"
+            "uts": "1795018180",
+            "#text": "18 Nov 2026, 16:09"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "138973",
+        "totalPages": "139026",
         "page": "1",
         "perPage": "1",
-        "total": "138973"
+        "total": "139026"
       }
     }
   }

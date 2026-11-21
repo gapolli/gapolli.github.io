@@ -230,7 +230,7 @@
       "deployments_url": "https://api.github.com/repos/gapolli/gapolli.github.io/deployments",
       "created_at": "2026-07-14T02:46:56Z",
       "updated_at": "2026-11-12T06:27:28Z",
-      "pushed_at": "2026-11-19T05:36:47Z",
+      "pushed_at": "2026-11-20T05:24:48Z",
       "git_url": "git://github.com/gapolli/gapolli.github.io.git",
       "ssh_url": "git@github.com:gapolli/gapolli.github.io.git",
       "clone_url": "https://github.com/gapolli/gapolli.github.io.git",
@@ -3897,47 +3897,47 @@
       "track": [
         {
           "artist": {
-            "mbid": "6b63d15d-10d1-45ff-a59d-966a5f093b6f",
-            "#text": "Years of Denial"
+            "mbid": "4a6a750f-9e14-4c40-922f-0b86c0cd58aa",
+            "#text": "Kris Baha"
           },
           "streamable": "0",
           "image": [
             {
               "size": "small",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/ff488a31b12623d205fa72ae4281fe2c.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/34s/6c53da807166acec98d47ab9364ec33a.jpg"
             },
             {
               "size": "medium",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/ff488a31b12623d205fa72ae4281fe2c.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/64s/6c53da807166acec98d47ab9364ec33a.jpg"
             },
             {
               "size": "large",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/ff488a31b12623d205fa72ae4281fe2c.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/174s/6c53da807166acec98d47ab9364ec33a.jpg"
             },
             {
               "size": "extralarge",
-              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/ff488a31b12623d205fa72ae4281fe2c.jpg"
+              "#text": "https://lastfm-img.freetls.fastly.net/i/u/300x300/6c53da807166acec98d47ab9364ec33a.jpg"
             }
           ],
-          "mbid": "",
+          "mbid": "d2959091-fa8a-4bfd-afd2-aece0fe6b3f9",
           "album": {
             "mbid": "",
-            "#text": "Dancing with Demons"
+            "#text": "Into The Dark"
           },
-          "name": "Dancing with Demons",
-          "url": "https://www.last.fm/music/Years+of+Denial/_/Dancing+with+Demons",
+          "name": "Into The Dark",
+          "url": "https://www.last.fm/music/Kris+Baha/_/Into+The+Dark",
           "date": {
-            "uts": "1795018180",
-            "#text": "18 Nov 2026, 16:09"
+            "uts": "1795209763",
+            "#text": "20 Nov 2026, 21:22"
           }
         }
       ],
       "@attr": {
         "user": "gapolli",
-        "totalPages": "139026",
+        "totalPages": "139187",
         "page": "1",
         "perPage": "1",
-        "total": "139026"
+        "total": "139187"
       }
     }
   }
